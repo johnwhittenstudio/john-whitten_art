@@ -1,0 +1,143 @@
+
+
+* {
+  margin: 0;
+  font-family: "Allerta";
+}
+
+.NavBar {
+  /* background-image: linear-gradient(#fedec7, #fedec7, #fedec7, #fedec7, #fedec7, #fedec700); */
+  /* background-image: linear-gradient(#fffeac, #fffeac, #fffeac, #fffeac, #fffeac, #fffeac00); */
+  height: 100vh;
+  width: 100px;
+  position: fixed;
+  z-index: 999;
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NavBar .Logo {
+  position: absolute;
+  color: #008c95;
+  left: 0;
+  top: 0;
+  width: 250px;
+  padding-top: 25px;
+  padding-left: 35px;
+  float:left;
+  text-indent: 3px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* font-weight: 900; */
+  /* padding-right:1%; */
+  /* margin-top:5rem; */
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.NavBar .Logo a {
+  color: #008c95;
+  text-decoration: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+.NavBar nav ul {
+  list-style: none;
+  margin-bottom: 35vh;
+  padding-left: 55px;
+}
+
+.NavBar nav ul li {
+  display: inline-block;
+  margin: 15px;
+}
+
+.NavBar nav ul li a {
+  text-decoration: none;
+  color: #008c95;
+  /* font-weight: bold; */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* font-weight: 900; */
+  font-size: 1rem;
+}
+
+.NavBar a:hover {
+  /* border-bottom: 5px solid #c5d248; */
+  color: #E47946;
+}
+
+.NavBar nav ul li a:active {
+  color: #E47946;
+}
+
+.NavBar nav a:active {
+  color: #E47946;
+}
+
+.NavBar .MobileNavigation {
+  display: none;
+}
+
+.Footer {
+  display: none;
+}
+
+
+
+
+
+
+
+@media (max-width: 1100px) {
+    .NavBar .Navigation {
+      display: none;
+    }
+
+    .NavBar .MobileNavigation {
+      display: flex;
+      align-items: center;
+    }
+
+    .Logo {
+      margin: 45%;
+    }
+
+
+    .NavBar nav ul {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      padding-top: 15%;
+      padding-bottom: 35%;
+      right: 0;
+      width: 100%;
+
+      /* background: linear-gradient(180deg, #fedec7, #fedec7, #89befb, #022e61); */
+      background-image: linear-gradient(#fffeac, #fef4b5, #fedec7,#fedec7, #7dace4, #022e61);
+      /* border-top: 2px solid #c5d248; */
+    }
+
+    .NavBar nav ul li {
+      padding-left: 15%;
+      padding-bottom: 2%;
+    }
+
+    .NavBar {
+      opacity: 1;
+    }
+
+    .NavBar a:hover {
+      border-bottom: none;
+      font-weight: bold;
+    }
+
+}
+
+.NavBar .MobileNavigation .Hamburger {
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+}

@@ -1,0 +1,13 @@
+/* body {
+  background-image: linear-gradient(#fffeac, #fef4b5, #fedec7, #7dace4, #022e61);
+  color: white;
+} */
+
+.Home {
+  background: #191D1F;
+  background: linear-gradient(90deg, black 65%, #c5d248 95%);
+  display: flex;
+  height: 630px;
+  padding-top: 80px;
+  position: relative;
+}

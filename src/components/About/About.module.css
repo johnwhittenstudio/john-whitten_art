@@ -1,0 +1,69 @@
+.About {
+  padding-top: 105px;
+  padding-bottom: 1%;
+}
+
+.About .Container {
+  display: block;
+  flex-wrap: wrap;
+  box-shadow: 0 0 12px 4px #83b8f4db;
+  color: rgb(0, 31, 97);
+  padding: 1.5em;
+  margin-left: 13%;
+  margin-right: 13%;
+  line-height: 1.75em;
+  font-size: 1em;
+  font-weight: 500;
+  border: 1px solid #5185978c;
+}
+
+.About .Container .Text {
+  text-indent: 3%;
+  padding-right: 5%;
+}
+
+.About .blockColLeft {
+  flex: 2;
+  padding-left: 5%;
+  left: 0;
+}
+
+.About .blockColRight{
+  flex: 1;
+  padding-left: 7%;
+  padding-right: 10%;
+  width: 40%;
+  right: 0;
+}
+
+.About p {
+  font-size: 1.2rem;
+}
+
+.About .blockColRight img{
+  width: 80%;
+}
+
+.About .Logos {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+.About .Logos img {
+  width: 35px;
+  padding: 2%;
+  opacity: 50%;
+}
+
+.About .Text a {
+  text-decoration: none;
+  color: rgb(0, 31, 97);
+}
+
+.About .Text a:hover  {
+  animation: blinker 0.3s linear infinite;
+}
