@@ -1,6 +1,7 @@
 import React from "react";
 import { FaYoutube, FaInstagramSquare, FaGithub, FaLinkedin } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
+import bio from './../img/bio.JPG'
 import classes from './Contact.module.css'
 
 const handleURL = (url) => {
@@ -10,6 +11,10 @@ const handleURL = (url) => {
 const Contact = () => {
   return ( 
     <div className={classes.Contact} id="contact">
+      <div className={classes.Text} >
+        <img className={classes.Bio} src={bio} alt="me"></img>
+        <p>please get in touch</p>
+      </div>
       <div className={classes.ContactIcons}>
         <GrMail color="008c95" size='30px' style={{padding: '1%'}}
           onClick={handleURL('mailto:johnwhitten.studio@gmail.com')} />

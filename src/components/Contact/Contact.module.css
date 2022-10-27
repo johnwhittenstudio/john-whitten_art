@@ -1,8 +1,27 @@
 .Contact {
   height: 100vh;
+  width: 100vw;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.Contact .Text p {
+  color: #008c95;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  /* font-weight:500; */
+  width: 100%;
+  margin: 30px 0px;
+}
+
+.Contact .Text .Bio {
+  margin: 155px 5px 20px 5px;
+  width: 800px;
 }
 
 .Contact .ContactIcons {
@@ -10,91 +29,21 @@
   display: flex;
   justify-content: center;
   cursor: pointer;
+  margin-bottom: 10%;
 }
 
 .Contact .ContactIcons svg path {
   cursor: pointer;
 }
 
-
-.Contact .ContactIcons a {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
-}
-
-
 .Contact .ContactIcons svg path:hover {
   /* border-bottom: 5px solid #c5d248; */
   color: #E47946;
 }
 
-.Contact .ContactIcons a:active {
-  color: #E47946;
-}
-
-.Contact .ContactIcons a:active {
+.Contact .ContactIcons svg path:active {
   color: #E47946;
 }
 
 
 
-
-.NavBar .Logo {
-  position: absolute;
-  color: #008c95;
-  left: 0;
-  top: 0;
-  width: 250px;
-  padding-top: 25px;
-  padding-left: 35px;
-  float:left;
-  text-indent: 3px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  /* font-weight: 900; */
-  /* padding-right:1%; */
-  /* margin-top:5rem; */
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.NavBar .Logo a {
-  color: #008c95;
-  text-decoration: none;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-weight: 500;
-}
-
-.NavBar nav ul {
-  list-style: none;
-  margin-bottom: 35vh;
-  padding-left: 55px;
-}
-
-.NavBar nav ul li {
-  display: inline-block;
-  margin: 15px;
-}
-
-.NavBar nav ul li a {
-  text-decoration: none;
-  color: #008c95;
-  /* font-weight: bold; */
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  /* font-weight: 900; */
-  font-size: 1rem;
-}
-
-.NavBar a:hover {
-  /* border-bottom: 5px solid #c5d248; */
-  color: #E47946;
-}
-
-.NavBar nav ul li a:active {
-  color: #E47946;
-}
-
-.NavBar nav a:active {
-  color: #E47946;
-}

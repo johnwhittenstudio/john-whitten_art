@@ -1,13 +1,19 @@
-/* body {
-  background-image: linear-gradient(#fffeac, #fef4b5, #fedec7, #7dace4, #022e61);
-  color: white;
-} */
-
 .Home {
-  background: #191D1F;
-  background: linear-gradient(90deg, black 65%, #c5d248 95%);
+  height: 100vh;
+  width: 1180px;
   display: flex;
-  height: 630px;
-  padding-top: 80px;
-  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.Home .Container {
+  max-width: 100%;
+  position: absolute;
+  margin-left: 45%;
+}
+
+
+.Home .Container .Image .Rock {
+  /* margin:15px 5px 20px 85px; */
+  height: 900px;
 }
