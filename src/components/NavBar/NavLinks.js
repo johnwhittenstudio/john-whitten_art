@@ -1,6 +1,12 @@
 import {motion} from 'framer-motion'
 import { Link } from 'react-router-dom';
+import { FaInstagramSquare } from "react-icons/fa";
+import { GrMail } from "react-icons/gr";
 import classes from './NavBar.module.css'
+
+const handleURL = (url) => {
+  return () => window.open(url, "_blank")
+}
 
 const NavLinks = (props) => {
 
@@ -12,7 +18,7 @@ const NavLinks = (props) => {
       <Link to="/" activeStyle>
         <div className={classes.Logo}>
         <div className={classes.shine}>
-          <h1><Link to="/">John Whitten</Link></h1>
+          <h3><Link to="/">John Whitten</Link></h3>
         </div>
         </div>
       </Link>
@@ -52,15 +58,24 @@ const NavLinks = (props) => {
             about
           </Link>
       </motion.li>
+      <div className={classes.Social}>
       <motion.li 
         initial={animateFrom}
         animate={animateTo}
         transition={{delay: 0.40}}
         onClick={() => props.isMobile && props.closeMobileMenu()}>
-          <Link to="/contact" activeStyle>
-            contact
-          </Link>
+        <GrMail color="008c95" size='20px' style={{padding: '0%'}}
+          onClick={handleURL('mailto:johnwhitten.studio@gmail.com')} />
       </motion.li>
+      <motion.li 
+        initial={animateFrom}
+        animate={animateTo}
+        transition={{delay: 0.50}}
+        onClick={() => props.isMobile && props.closeMobileMenu()}>
+        <FaInstagramSquare color="008c95" size='20px' style={{padding: '0%'}}
+          onClick={handleURL('https://www.instagram.com/john.whitten/?hl=en')} />
+      </motion.li>
+      </div>
     </ul>
   );
 }

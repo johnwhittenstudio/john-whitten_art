@@ -1,0 +1,195 @@
+/* Drawings Index Page CSS */
+
+.Drawings {
+  /* padding-top: 105px; */
+  /* padding-bottom: 3.5%; */
+}
+
+.Drawings .HeaderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.DrawingsIndex .Header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+
+.Drawings .Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Drawings .Column {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Drawings .Row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Drawings .Container img {
+  max-width: 100%;
+  /* box-shadow: 0 0 12px 4px #5185978c; */
+}
+
+.DrawingsIndex .Container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.DrawingsIndex .Row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.DrawingsIndex .Column {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: center;
+}
+
+.Drawings .Container .Text {
+  display: flex;
+  right: 0;
+  text-align: right;
+  justify-content:right;
+  margin-right: 10%;
+  color: #008c95;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: .95rem;
+}
+
+.Drawings .Container .Text h3 {
+  /* display: flex; */
+  right: 0;
+  text-align: right;
+  justify-content:right;
+  align-items:baseline;
+  color: #008c95;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: .85rem;
+  font-style:italic;
+  /* font-weight:bold; */
+  font-weight: 500;
+  padding-right: 15px;
+}
+
+.Drawings .Container .Text p {
+  /* display: flex; */
+  right: 0;
+  text-align: right;
+  justify-content:right;
+  align-items:baseline;
+  /* margin-right: 12%; */
+  color: #008c95;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: .85rem;
+  padding: 0px 0px 35px 10px;
+}
+
+.Drawings .Container .HR {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 50vw;
+}
+
+.DrawingsIndex a {
+  text-decoration: none;
+}
+
+.DrawingsIndex .Container .Row .DrawingsCover {
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  /* box-shadow: 0 0 12px 4px #c5cee0; */
+  text-align: center;
+  /* margin-left: 15px;
+  margin-right: 15px; */
+  transition: 0.3s;
+  max-width: 1400px;
+  max-height: 90vh;
+  margin: 2% 5%;
+  margin-left: 100px;
+}
+
+/* .DrawingsIndex .DrawingsCover {
+  margin: 5%;
+} */
+
+
+
+
+/* Single Drawing Page */
+
+.Drawing {
+  padding-top: 105px;
+  padding-bottom: 2%;
+}
+
+.Drawing .HeaderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Drawing .mySwiper {
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Drawing .mySwiper .swiperSlide img {
+  max-width: 60%;
+  padding-left: 20%;
+  padding-top: 1%;
+  object-fit: cover;
+  padding-bottom: 1%;
+}
+
+.Drawing .Swiper .Nav {
+  margin: 15%;
+}
+
+.Drawing .Container .Text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2%;
+  width: 50%;
+}
+
+.DrawingText p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: light;
+
+}
+
+.Drawing .swiperSlide p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: light;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  width: 75%;
+  padding-left: 12.5%;
+  /* color: #fcddc8; */
+}

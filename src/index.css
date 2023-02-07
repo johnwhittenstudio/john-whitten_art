@@ -14,8 +14,6 @@ code {
 
 body {
   height: 100vh;
-  background-image: linear-gradient(#008c95, #F3CD91, #F3CD91, #E47946);
-  /* background: #E5E5E5; */
   background: white;
   color: white;
 }
