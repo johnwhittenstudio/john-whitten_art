@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import NavBar from "../NavBar/NavBar"
 import DrawingList from './DrawingsIndex';
 // import DrawingDetail from './DrawingDetail';
 import data from './data';
@@ -9,6 +10,7 @@ function GalleryDrawing() {
 
   return (
     <div className={classes.Shop}>
+          <NavBar />
       {/* <Header countCartItems={cartItems.length}></Header> */}
       <div className={classes.row}>
         <DrawingList drawings={drawings} ></DrawingList>
