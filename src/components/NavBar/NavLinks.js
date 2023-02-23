@@ -17,9 +17,7 @@ const NavLinks = (props) => {
     <ul>
       <Link to="/" activeStyle>
         <div className={classes.Logo}>
-        <div className={classes.shine}>
           <h3><Link to="/">John Whitten</Link></h3>
-        </div>
         </div>
       </Link>
       <motion.li 
@@ -64,7 +62,7 @@ const NavLinks = (props) => {
         animate={animateTo}
         transition={{delay: 0.40}}
         onClick={() => props.isMobile && props.closeMobileMenu()}>
-        <GrMail color="008c95" size='20px' style={{padding: '0%'}}
+        <GrMail color="#ababab" size='20px' style={{padding: '0%'}}
           onClick={handleURL('mailto:johnwhitten.studio@gmail.com')} />
       </motion.li>
       <motion.li 
@@ -72,7 +70,7 @@ const NavLinks = (props) => {
         animate={animateTo}
         transition={{delay: 0.50}}
         onClick={() => props.isMobile && props.closeMobileMenu()}>
-        <FaInstagramSquare color="008c95" size='20px' style={{padding: '0%'}}
+        <FaInstagramSquare color="#ababab" size='20px' style={{padding: '0%'}}
           onClick={handleURL('https://www.instagram.com/john.whitten/?hl=en')} />
       </motion.li>
       </div>
