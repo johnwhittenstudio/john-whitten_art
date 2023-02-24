@@ -10,65 +10,65 @@ const handleURL = (url) => {
 
 const NavLinks = (props) => {
 
-  const animateFrom = {opacity: 0, y: -40}
-  const animateTo = {opacity: 1, y: 0}
+  // const animateFrom = {opacity: 0, y: -40}
+  // const animateTo = {opacity: 1, y: 0}
 
   return ( 
     <ul>
-      <Link to="/" activeStyle>
+      <Link to="/" activestyle>
         <div className={classes.Logo}>
           <h3><Link to="/">John Whitten</Link></h3>
         </div>
       </Link>
       <motion.li 
-        initial={animateFrom}
-        animate={animateTo}
-        transition={{delay: 0.05}}
+        // initial={animateFrom}
+        // animate={animateTo}
+        // transition={{delay: 0.05}}
         onClick={() => props.isMobile && props.closeMobileMenu()}>
-          <Link to="/drawing" activeStyle>
+          <Link to="/drawing" activestyle>
             drawing
           </Link>
       </motion.li>
       <motion.li 
-        initial={animateFrom}
-        animate={animateTo}
-        transition={{delay: 0.10}}
+        // initial={animateFrom}
+        // animate={animateTo}
+        // transition={{delay: 0.10}}
         onClick={() => props.isMobile && props.closeMobileMenu()}>
-          <Link to="/photo" activeStyle>
+          <Link to="/photo" activestyle>
             photo
           </Link>
       </motion.li>
       <motion.li 
-        initial={animateFrom}
-        animate={animateTo}        
-        transition={{delay: 0.20}}
+        // initial={animateFrom}
+        // animate={animateTo}        
+        // transition={{delay: 0.20}}
         onClick={() => props.isMobile && props.closeMobileMenu()}>
-          <Link to="/video" activeStyle>
+          <Link to="/video" activestyle>
             video
           </Link>
       </motion.li>
       <motion.li 
-        initial={animateFrom}
-        animate={animateTo}
-        transition={{delay: 0.30}}
+        // initial={animateFrom}
+        // animate={animateTo}
+        // transition={{delay: 0.30}}
         onClick={() => props.isMobile && props.closeMobileMenu()}>
-          <Link to="/about" activeStyle>
+          <Link to="/about" activestyle>
             about
           </Link>
       </motion.li>
       <div className={classes.Social}>
       <motion.li 
-        initial={animateFrom}
-        animate={animateTo}
-        transition={{delay: 0.40}}
+        // initial={animateFrom}
+        // animate={animateTo}
+        // transition={{delay: 0.40}}
         onClick={() => props.isMobile && props.closeMobileMenu()}>
         <GrMail color="#ababab" size='20px' style={{padding: '0%'}}
           onClick={handleURL('mailto:johnwhitten.studio@gmail.com')} />
       </motion.li>
       <motion.li 
-        initial={animateFrom}
-        animate={animateTo}
-        transition={{delay: 0.50}}
+        // initial={animateFrom}
+        // animate={animateTo}
+        // transition={{delay: 0.50}}
         onClick={() => props.isMobile && props.closeMobileMenu()}>
         <FaInstagramSquare color="#ababab" size='20px' style={{padding: '0%'}}
           onClick={handleURL('https://www.instagram.com/john.whitten/?hl=en')} />

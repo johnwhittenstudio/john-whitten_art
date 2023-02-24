@@ -1,13 +1,18 @@
 /* Drawings Index Page CSS */
 
+* {
+  margin: 0;
+  font-family: "Allerta";
+}
+
 .DrawingsIndexContainer {
-  margin-top: 20px;
+  margin-top: 40px;
   position: static;
-  height: 75%;
-  margin-bottom: 150px;
-  /* display: flex;
+  /* height: 75%; */
+  /* margin-bottom: 150px; */
+  display: flex;
   flex-direction: column;
-  align-items: center; */
+  align-items: center;
   /* max-height: 400px; */
 }
 
@@ -20,7 +25,7 @@
 }
 
 .DrawingsIndex img {
-  width: 70%;
+  width: 55%;
   margin-left: 450px;
 }
 
@@ -42,128 +47,65 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* .Drawing img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  vertical-align: middle;
-} */
-
-/* .Drawing .DrawingInfo {
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  background: rgba(255, 255, 255, 0.7);
-  box-sizing: border-box;
-  color: #22bfff;
-} */
 
 .DrawingsIndexContainer .DrawingsIndex .DrawingInfo {
-  /* text-align: left;
-  margin-right: auto;
-  background-color: red; */
   color: #555555;
   max-height: 80%;
-  margin-left: 50px;
-  /* width: 180px; */
+  margin-left: 60px;
+  font-family: sans-serif;
 }
 
-.DrawingsIndexContainer .DrawingsIndex .DrawingInfo h3 {
+.DrawingsIndex h4 {
   margin-bottom: 5px;
-  font-size: 1.25rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 800;
   color: #555555;
 }
 
-.DrawingDescription {
-  margin-bottom: 10px;
-  font-size: 1rem;
-  color: #999999;
-}
-
-.DrawingSize,
-.DrawingYear {
-  font-size: 0.9rem;
-  font-style: italic;
-  color: #aaaaaa;
-}
-
-
-/* 
-.Drawing .DrawingInfo h3 {
+.DrawingsIndex p {
   margin-bottom: 5px;
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: #555555;
-}
-
-.Drawing .DrawingInfo p {
-  margin-bottom: 10px;
-  font-size: 1rem;
+  font-size: .9rem;
   color: #999999;
 }
 
-.Drawing .DrawingInfo span {
-  font-size: 0.9rem;
-  font-style: italic;
-  color: #aaaaaa;
-} */
-
-/* .PaginationContainer {
-  display: flex;
-  justify-content: center;
-  margin: 50px;
-  color: #15adee;
-  text-transform: uppercase;
-  left: 0;
-  bottom: 0;
-  position: absolute;
-} */
 
 .PaginationContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px;
+  margin-left: 40px;
+  margin-bottom: 30px;
   color: #15adee;
   text-transform: uppercase;
-  /* position: fixed; */
   bottom: 0;
   left: 0;
   width: 100%;
+  
 }
 
-.Pagination {
+.pagination {
   display: flex;
   justify-content: flex-end;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
-.Pagination .pagination li {
-  margin-right: 10px;
-  margin-bottom: 10px;
+
+.pagination li {
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 12px;
+  list-style: none;
 }
 
-.Pagination .pagination li a {
-  color: #999999;
-  border: none;
-  background-color: transparent;
-  padding: 5px;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.Pagination .pagination li.active a {
+.pagination li a {
+  text-decoration: none;
   color: #22bfff;
-  border: none;
-  background-color: transparent;
-  padding: 5px;
-  font-size: 1rem;
-  font-weight: 500;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.pagination li.active a {
+  display: none;
 }
 
 .Pagination .pagination li:hover a {
@@ -176,12 +118,3 @@
   cursor: pointer;
 }
 
-
-
-
-/* @media (max-width: 800px) {
-  .Drawing {
-    width: 90%;
-    margin: 0 auto;
-  }
-} */

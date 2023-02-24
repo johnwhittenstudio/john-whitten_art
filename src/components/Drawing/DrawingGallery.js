@@ -34,3 +34,4 @@ function DrawingGallery() {
 }
 
 export default DrawingGallery;
+

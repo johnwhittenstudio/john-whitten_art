@@ -82,15 +82,15 @@
 }
 
 .NavBar a:hover {
-  color: #E47946;
+  color: #22bfff;
 }
 
 .NavBar nav ul li a:active {
-  color: #E47946;
+  color: #22bfff;
 }
 
 .NavBar nav a:active {
-  color: #E47946;
+  color: #22bfff;
 }
 
 .NavBar .MobileNavigation {
@@ -107,7 +107,7 @@
 }
 
 .NavBar .Social svg path:hover {
-  color: #E47946;
+  color: #22bfff;
 }
 
 .Footer {

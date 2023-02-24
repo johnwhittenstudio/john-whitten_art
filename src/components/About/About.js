@@ -18,15 +18,15 @@ const About = () => {
           <p>please get in touch</p>
         </div>
         <div className={classes.AboutIcons}>
-          <GrMail color="008c95" size='30px' style={{padding: '1%'}}
+          <GrMail color="#22bfff" size='30px' style={{padding: '1%'}}
             onClick={handleURL('mailto:johnwhitten.studio@gmail.com')} />
-          <FaInstagramSquare color="008c95" size='30px' style={{padding: '1%'}}
+          <FaInstagramSquare color="#22bfff" size='30px' style={{padding: '1%'}}
             onClick={handleURL('https://www.instagram.com/john.whitten/?hl=en')} />
-          <FaGithub color="008c95" size='30px' style={{padding: '1%'}}
+          <FaGithub color="#22bfff" size='30px' style={{padding: '1%'}}
             onClick={handleURL('https://github.com/johnwhittenstudio')} />
-          <FaLinkedin color="008c95" size='30px' style={{padding: '1%'}}
+          <FaLinkedin color="#22bfff" size='30px' style={{padding: '1%'}}
             onClick={handleURL('https://www.linkedin.com/in/johnwhittenstudio/')} />
-          <FaYoutube color="008c95" size='30px' style={{padding: '1%'}}
+          <FaYoutube color="#22bfff" size='30px' style={{padding: '1%'}}
             onClick={handleURL('https://www.youtube.com/channel/UC-V6tMaHcYExkqCy-NWzTxQ/featured')} />
       </div>
       </div>
