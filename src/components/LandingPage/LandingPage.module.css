@@ -22,7 +22,7 @@
 
 .LandingPage h1 {
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 1em;
   text-transform: uppercase;
   letter-spacing: .15em;
@@ -43,6 +43,8 @@
 .LandingPage button {
   background-color: rgba(255, 255, 255, 0);
   border: 2px solid white;
+  border-radius: 50px;
+  height: 90px;
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
   color: white;
   padding: 15px 20px;
