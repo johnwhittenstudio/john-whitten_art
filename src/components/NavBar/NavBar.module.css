@@ -1,62 +1,60 @@
 * {
   margin: 0;
   font-family: "Allerta";
+  /* background: green; */
 }
 
 .NavBar {
   /* background-image: linear-gradient(#fedec7, #fedec7, #fedec7, #fedec7, #fedec7, #fedec700); */
   /* background-image: linear-gradient(#fffeac, #fffeac, #fffeac, #fffeac, #fffeac, #fffeac00); */
-  height: 100vh;
-  top: 50px;
-  left: 50px;
-  width: 180px;
-  position: fixed;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 260px;
   z-index: 0;
   opacity: 0.9;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
-  /* background-color: blue; */
+}
+
+.Navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 260px;
 }
 
 .NavBar .Logo {
   position: absolute;
   color: #15b7ff;
-  /* background-color: green; */
   left: 0;
   top: 0;
   width: 170px;
-  /* padding: 45px 0 45px 45px; */
-  /* padding-left: 55px; */
   float:left;
   text-indent: -1px;
-
-  /* font-weight: 900; */
-  /* padding-right:1%; */
-  /* margin-top:5rem; */
-  /* text-transform: lowercase; */
   cursor: pointer;
   text-decoration: none;
+  padding: 50px;
 }
 
 .NavBar .Logo a {
   color: #15b7ff;
   text-decoration: none;
   font-family:"Futura", "Trebuchet MS", Arial, sans-serif;
-  /* font-weight: 800; */
   font-size: 2.50rem;
   font-weight: 500;
   font-style: normal;
   line-height: 1.3em;
+  
 }
 
 .NavBar nav ul {
   list-style: none;
-  margin-bottom: 35vh;
-  /* padding-left: 55px; */
-  /* background-color: yellow; */
   left: 0;
-  padding: 0;
+  padding-top: 250px;
 }
 
 .NavBar nav ul li {
@@ -110,6 +108,10 @@
   color: #22bfff;
 }
 
+.Hamburger {
+  padding: 25px;
+}
+
 .Footer {
   display: none;
 }
@@ -130,12 +132,12 @@
     }
 
     .NavBar .MobileNavigation {
-      display: flex;
+      display: grid;
       align-items: center;
     }
 
-    .Logo {
-      margin: 45%;
+    .NavBar .Logo {
+      display: none;
     }
 
 
@@ -143,19 +145,18 @@
       display: flex;
       flex-direction: column;
       position: absolute;
-      top: 60px;
-      padding-top: 15%;
-      padding-bottom: 35%;
-      right: 0;
-      width: 100%;
-      /* background: linear-gradient(180deg, #fedec7, #fedec7, #89befb, #022e61); */
-      background-image: linear-gradient(#fffeac, #fef4b5, #fedec7,#fedec7, #7dace4, #022e61);
-      /* border-top: 2px solid #c5d248; */
+      top: 0;
+      padding-top: 0;
+      background-color: blue;
+      width: 150px;
     }
 
     .NavBar nav ul li {
-      padding-left: 15%;
-      padding-bottom: 2%;
+      text-align: center;
+    }
+
+    .NavBar nav ul li a {
+      font-size: 20px;
     }
 
     .NavBar {
@@ -164,14 +165,21 @@
 
     .NavBar a:hover {
       border-bottom: none;
-      font-weight: bold;
+    }
+
+    .NavBar .Social {
+      display: flex;
+      justify-content: center;
+      padding: 0;
     }
 
 }
 
 .NavBar .MobileNavigation .Hamburger {
   position: absolute;
-  right: 0;
+  left: 0;
   top: 0;
+  margin: 0 !important;
   cursor: pointer;
+  z-index: 2;
 }
