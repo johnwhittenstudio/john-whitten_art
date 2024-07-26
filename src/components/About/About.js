@@ -1,6 +1,6 @@
 import { FaYoutube, FaInstagramSquare, FaGithub, FaLinkedin } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
-import bio from './../img/bio.JPG'
+import bio from './../img/littlePigeon.png'
 import NavBar from "../NavBar/NavBar"
 import classes from './About.module.css'
 
