@@ -36,11 +36,14 @@
   color: #00121a;  
   z-index: 9999;
   text-decoration: none;
-  
+}
+
+.Home .Logo a:hover {
+  color: #0022a3;
 }
 
 .Home h2 {
-  color: black;
+  /* color: black; */
 }
 
 .Home h3 {
