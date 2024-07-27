@@ -8,12 +8,12 @@ const Home = () => (
     <div className={classes.Home}>
     <NavBar />
     <header >
-    <Link to="/" activestyle>
+      <Link to="/" activestyle>
         <div className={classes.Logo}>
           <h3><Link to="/">John Whitten</Link></h3>
         </div>
       </Link>
-      </header >
+    </header >
     {/* <h2>Welcome to my portfolio!</h2>
     <p>Here you will find information about my projects and experience.</p> */}
     </div>
