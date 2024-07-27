@@ -16,7 +16,7 @@
 }
 
 .Home header {
-  height: 100px;
+  height: 95px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,9 +33,10 @@
   letter-spacing: .15em;
   font-weight: 500;
   font-style: normal;
-  color: #32beff;  
+  color: #00121a;  
   z-index: 9999;
   text-decoration: none;
+  
 }
 
 .Home h2 {
@@ -44,4 +45,11 @@
 
 .Home h3 {
   text-decoration: none;
+}
+
+
+@media (max-width: 500px) {
+  .Home .Logo a {
+    padding-left: 45px;
+  }
 }
