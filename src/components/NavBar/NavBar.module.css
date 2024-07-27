@@ -1,22 +1,22 @@
 * {
   margin: 0;
   font-family: "Allerta";
-  /* background: green; */
+  text-decoration: none;
 }
 
 .NavBar {
-  /* background-image: linear-gradient(#fedec7, #fedec7, #fedec7, #fedec7, #fedec7, #fedec700); */
-  /* background-image: linear-gradient(#fffeac, #fffeac, #fffeac, #fffeac, #fffeac, #fffeac00); */
   position: absolute;
   overflow: hidden;
   top: 0;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 450px;
   z-index: 0;
   opacity: 0.9;
   display: flex;
+  margin-right: 450px;
   align-items: center;
+  flex-direction: column;
 }
 
 .Navigation {
@@ -24,7 +24,7 @@
   top: 0;
   left: 0;
   bottom: 0;
-  width: 260px;
+  /* width: 260px; */
 }
 
 .NavBar .Logo {
@@ -33,49 +33,47 @@
   left: 0;
   top: 0;
   width: 170px;
-  float:left;
+  float: left;
   text-indent: -1px;
   cursor: pointer;
-  text-decoration: none;
   padding: 50px;
 }
 
 .NavBar .Logo a {
   color: #15b7ff;
   text-decoration: none;
-  font-family:"Futura", "Trebuchet MS", Arial, sans-serif;
+  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
   font-size: 2.50rem;
   font-weight: 500;
   font-style: normal;
   line-height: 1.3em;
-  
+  text-decoration: none;
 }
 
 .NavBar nav ul {
   list-style: none;
-  left: 0;
   padding-top: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* width: 100%; */
 }
 
 .NavBar nav ul li {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-  padding-top: 35px;
+  padding-top: 50px;
 }
 
 .NavBar nav ul li a {
   text-decoration: none;
-  /* color: #15b7ff; */
   color: #555555;
-  font-family:Arial, Helvetica, sans-serif; 
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-style: normal;
   text-transform: none;
   letter-spacing: 0em;
   line-height: 1.6em;
   font-size: 16px;
-  /* display: block; */
+  display: block;
   padding: 0.2em;
   cursor: pointer;
 }
@@ -96,11 +94,6 @@
   display: none;
 }
 
-.NavBar .Social {
-  margin-top: 55%;
-  padding: 0;
-}
-
 .NavBar .Social svg path {
   cursor: pointer;
 }
@@ -117,7 +110,7 @@
   display: flex;
   justify-content: left;
   padding: 0;
-  margin: 1px;
+  margin-top: 50px;
   left: 0;
 }
 
@@ -125,68 +118,67 @@
   display: none;
 }
 
-
-
-
-
-
-
 @media (max-width: 1100px) {
-    /* .NavBar {
-      width: 100%;
-    } */
-  
-    .NavBar .Navigation {
-      display: none;
-    }
+  .NavBar {
+    width: 100%;
+  }
 
-    .NavBar .MobileNavigation {
-      display: grid;
-      align-items: center;
-      /* width: 500px; */
-    }
+  .NavBar .Navigation {
+    display: none;
+  }
 
-    .NavBar .Logo {
-      display: none;
-    }
+  .NavBar .MobileNavigation {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+  }
 
+  .NavBar .Logo {
+    display: none;
+  }
 
-    .NavBar nav ul {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 0;
-      padding-top: 0;
-      /* margin-right: 25px; */
-      background-color: blue;
-      width: 350px;
-    }
+  .NavBar nav ul {
+    position: absolute;
+    top: 0;
+    padding: 150px 0px;
+    background-color: #fff;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
 
-    .NavBar nav ul li {
-      text-align: center;
-    }
+  .NavBar nav ul li {
+    text-align: left;
+    margin-bottom: 10px;
+  }
 
-    .NavBar nav ul li a {
-      font-size: 20px;
-    }
+  .NavBar nav ul li a {
+    font-size: 26px;
+    color: #333;
+  }
 
-    .NavBar {
-      opacity: 1;
-    }
+  .NavBar nav ul li a:hover {
+    color: #666;
+  }
 
-    .NavBar a:hover {
-      border-bottom: none;
-    }
+  .NavBar .MobileNavigation .Hamburger {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0 !important;
+    cursor: pointer;
+    z-index: 2;
+  }
 
+  .NavBar .Social {
+    margin-top: 0;
+    padding: 20px 25px;
+  }
 
-
-}
-
-.NavBar .MobileNavigation .Hamburger {
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin: 0 !important;
-  cursor: pointer;
-  z-index: 2;
+  .NavBar .Social li {
+    margin-top: 0;
+    padding: 20px 25px;
+  }
 }

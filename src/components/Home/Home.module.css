@@ -1,12 +1,47 @@
 .Home {
   /* position: absolute; */
-  margin-left: 260px;
+  /* margin-left: 260px;
   margin-top: 50px;
   min-height: 100%;
-  min-width: 100%;
-  background: red;
+  min-width: 100%; */
+  /* background: red; */
+  margin: 0;
+  height: 100vh;
+  /* background: url(../img/littlePigeon.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; */
+  background-size: cover;
+  z-index: 1;
+}
+
+.Home header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+
+
+.Home .Logo a {
+  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 1em;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-weight: 500;
+  font-style: normal;
+  color: #32beff;  
+  z-index: 9999;
+  text-decoration: none;
 }
 
 .Home h2 {
   color: black;
+}
+
+.Home h3 {
+  text-decoration: none;
 }

@@ -1,12 +1,12 @@
-import classes from './NavBar.module.css'
-import NavLinks from './NavLinks'
+import classes from './NavBar.module.css';
+import NavLinks from './NavLinks';
 
 const Navigation = () => {
-  return ( 
+  return (
     <nav className={classes.Navigation}>
-    <NavLinks />
+      <NavLinks />
     </nav>
   );
-}
+};
 
 export default Navigation;
