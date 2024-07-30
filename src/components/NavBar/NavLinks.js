@@ -10,7 +10,7 @@ const handleURL = (url) => {
 
 const NavLinks = (props) => {
 
-  const animateFrom = {opacity: 0, y: -40}
+  const animateFrom = {opacity: 0, y: 0}
   const animateTo = {opacity: 1, y: 0}
 
   return ( 

@@ -58,21 +58,21 @@ function DrawingsIndex() {
               image={drawing?.image}
             />
           ))}
-        <div className={classes.PaginationContainer}>
-          <ReactPaginate
-            pageCount={pageCountState}
-            onPageChange={handlePageClick}
-            forcePage={currentPage} // zero-based index
-            marginPagesDisplayed={1}
-            pageRangeDisplayed={2}
-            breakLabel={"..."}
-            previousLabel={"<"}
-            nextLabel={">"}
-            containerClassName={classes.pagination}
-            activeClassName={classes.active}
-            renderOnZeroPageCount={null}
-          />
-        </div>
+          <div className={classes.PaginationContainer}>
+            <ReactPaginate
+              pageCount={pageCountState}
+              onPageChange={handlePageClick}
+              forcePage={currentPage} // zero-based index
+              marginPagesDisplayed={1}
+              pageRangeDisplayed={2}
+              breakLabel={"..."}
+              previousLabel={"<"}
+              nextLabel={">"}
+              containerClassName={classes.pagination}
+              activeClassName={classes.active}
+              renderOnZeroPageCount={null}
+            />
+          </div>
         </div>
       </div>
     </div>
