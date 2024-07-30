@@ -57,23 +57,23 @@ const NavLinks = (props) => {
           </Link>
       </motion.li>
       <div className={classes.Social}>
-      <motion.li 
-        initial={animateFrom}
-        animate={animateTo}
-        transition={{delay: 0.40}}
-        onClick={() => props.isMobile && props.closeMobileMenu()}>
-        <GrMail color="#ababab" size='25px' style={{padding: '0%'}}
-          onClick={handleURL('mailto:johnwhitten.studio@gmail.com')} />
-        </motion.li>
         <motion.li 
           initial={animateFrom}
           animate={animateTo}
-          transition={{delay: 0.50}}
+          transition={{delay: 0.40}}
           onClick={() => props.isMobile && props.closeMobileMenu()}>
-          <FaInstagramSquare color="#ababab" size='25px' style={{padding: '0%'}}
-            onClick={handleURL('https://www.instagram.com/john.whitten/?hl=en')} />
-        </motion.li>
-      </div>
+          <GrMail color="#555555" size='25px' style={{padding: '0%'}}
+            onClick={handleURL('mailto:johnwhitten.studio@gmail.com')} />
+          </motion.li>
+          <motion.li 
+            initial={animateFrom}
+            animate={animateTo}
+            transition={{delay: 0.50}}
+            onClick={() => props.isMobile && props.closeMobileMenu()}>
+            <FaInstagramSquare color="#555555" size='25px' style={{padding: '0%'}}
+              onClick={handleURL('https://www.instagram.com/john.whitten/?hl=en')} />
+          </motion.li>
+        </div>
     </ul>
   );
 }
