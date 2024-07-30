@@ -159,6 +159,7 @@
 @media (max-width: 1100px) {
   .NavBar {
     width: 100%;
+    /* height: 80vh; */
   }
 
   /* .NavBar .Navigation {
@@ -187,6 +188,7 @@
     padding: 35px 0px;
     background-color: #fff;
     width: 100%;
+    height: 80%;
     overflow-x: hidden;
     overflow-y: hidden;
     margin-top: 150px;

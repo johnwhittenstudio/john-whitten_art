@@ -7,20 +7,47 @@
   justify-content: center;
 }
 
+.AboutContainer {
+  height: 100vh;
+  min-width: 100vw;
+  margin: 0;
+}
+
+.AboutContainer header {
+  height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+
+.AboutContainer .Logo a {
+  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 1em;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-weight: 500;
+  font-style: normal;
+  color: #00121a;  
+  z-index: 9999;
+  text-decoration: none;
+}
+
 .About .Text p {
-  color: #22bfff;
+  color: #555555;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 1rem;
-  /* font-weight:500; */
-  width: 100%;
-  margin: 30px 0px;
+  margin: 20px 5px 20px 5px;
+  width: 800px;
 }
 
-.About .Text .Bio {
-  margin: 155px 5px 20px 5px;
+.About .Bio {
+  margin: 0px 5px 20px 5px;
   width: 800px;
 }
 
@@ -37,13 +64,69 @@
 }
 
 .About .AboutIcons svg path:hover {
-  /* border-bottom: 5px solid #c5d248; */
-  color: #E47946;
+  color: #0022a3;
 }
 
 .About .AboutIcons svg path:active {
-  color: #E47946;
+  color: #0022a3;
 }
 
 
 
+/* -------------------- tablet -------------------- */
+
+@media (max-width: 900px) {
+
+  .About .Bio {
+    /* margin-left: 45px; */
+    width: 500px;
+  }
+
+  .About .Text p {
+    color: #555555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    margin: 20px 5px 20px 5px;
+    width: 500px;
+  }
+}
+
+
+
+/* -------------------- mobile -------------------- */
+
+@media (max-width: 600px) {
+  
+  .AboutContainer {
+    width: 390px;
+  }
+
+  .AboutContainer header {
+    margin-left: 35px;
+  }
+
+  .About .Bio {
+    margin-bottom: 50px;
+    margin-left: 30px;
+    width: 390px;
+  }
+
+  .About .Text p {
+    margin-bottom: 50px;
+    margin-left: 40px;
+    width: 390px;
+  }
+
+  .About .AboutIcons {
+    width: 390px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 40px;
+  }
+
+}
