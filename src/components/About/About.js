@@ -23,7 +23,10 @@ const About = () => {
         <div className={classes.About} id="about">
             <img className={classes.Bio} src={bio} alt="me"></img>
           <div className={classes.Text} >
-            <p>John Whitten is a visual artist, art educator, and web developer with his home and studio located in Portland, OR. <br/><br/> Whitten co-founded the artist-collective galleries Well Well Projects and Carnation Contemporary and the artist-collective project Thunderstruck.</p>
+            <p>John Whitten is a visual artist, educator, and web developer with his home and studio located in Portland, OR. His work has been exhibited nationally and internationally, and he's been the recipient of numerous residencies, grants, and awards.
+            <br/>
+            <br/> 
+            John is a co-founding director of the artist-collective gallery Well Well Projects. In 2018 he co-founded Carnation Contemporary and the artist-collective project Thunderstruck.</p>
           </div>
           <div className={classes.AboutIcons}>
             <GrMail color="#555555" size='25px' style={{padding: '1%'}}

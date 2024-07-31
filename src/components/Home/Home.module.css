@@ -52,7 +52,11 @@
 
 
 @media (max-width: 500px) {
-  .Home .Logo a {
-    padding-left: 45px;
+  
+  .Home .Logo {
+    margin-left: 65px;
   }
+  /* .Home .Logo a {
+    padding-left: 45px;
+  } */
 }
