@@ -5,9 +5,11 @@ import bio from './../img/about.jpg'
 import NavBar from "../NavBar/NavBar"
 import classes from './About.module.css'
 
+
 const handleURL = (url) => {
   return () => window.open(url, "_blank")
 }
+
 
 const About = () => {
   return ( 
@@ -26,7 +28,7 @@ const About = () => {
             <p>John Whitten is a visual artist, educator, and web developer with his home and studio located in Portland, OR. His work has been exhibited nationally and internationally, and he's been the recipient of numerous residencies, grants, and awards.
             <br/>
             <br/> 
-            John is a co-founding director of the artist-collective gallery Well Well Projects. In 2018 he co-founded Carnation Contemporary and the artist-collective project Thunderstruck.</p>
+            John currently serves as director of the artist-collective gallery Well Well Projects, which he co-founded in 2021. In 2018, he co-founded the artist-collective gallery Carnation Contemporary and the nomadic artist residency and exhibition project Thunderstruck.</p>
           </div>
           <div className={classes.AboutIcons}>
             <GrMail color="#555555" size='25px' style={{padding: '1%'}}

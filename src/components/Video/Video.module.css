@@ -1,0 +1,46 @@
+
+* {
+  margin: 0;
+  font-family: "Allerta";
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.Video {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.Video .Logo {
+  height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.Video .Logo {
+  z-index: 9999;
+}
+
+.Video .Logo a {
+  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 1em;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-weight: 500;
+  font-style: normal;
+  color: #00121a;  
+  text-decoration: none;
+}
+
+.Video .ImageContainer {
+  width: 100%; /* Adjust based on your design */
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}

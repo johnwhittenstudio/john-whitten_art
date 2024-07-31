@@ -26,7 +26,7 @@ const NavLinks = (props) => {
         transition={{delay: 0.05}}
         onClick={() => props.isMobile && props.closeMobileMenu()}>
           <Link to="/drawing" activestyle>
-            drawing
+            new works
           </Link>
       </motion.li>
       <motion.li 
@@ -35,7 +35,7 @@ const NavLinks = (props) => {
         transition={{delay: 0.10}}
         onClick={() => props.isMobile && props.closeMobileMenu()}>
           <Link to="/photo" activestyle>
-            photo
+            archive
           </Link>
       </motion.li>
       <motion.li 
