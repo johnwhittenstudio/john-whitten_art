@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Allerta";
+  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
 }
 
 body {
@@ -39,15 +39,15 @@ body {
 .DrawingAndTextContainer {
   display: flex;
   width: 90%;
-  margin: auto;
-  height: 70vh;
+  margin: 0;
+  height: 85vh;
 }
 
 .DrawingsIndex {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 40%;
+  width: 20%;
 }
 
 .DrawingInfo {
@@ -55,15 +55,22 @@ body {
 }
 
 .DrawingInfo h4, .DrawingInfo p {
+  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
   margin-bottom: 5px;
-  font-size: 1rem;
+  font-size: .9rem;
+  font-weight: 500;
   color: #555555;
+}
+
+.DrawingInfo h4 {
+  font-weight: 800;
 }
 
 .Drawing img {
   max-width: 100%;
-  height: auto;
-  margin-left: 20px;
+  max-height: 100%;
+  /* height: auto; */
+  margin: 20px;
   object-fit: contain;
   display: block;
 }
@@ -86,8 +93,9 @@ body {
 .pagination li a {
   text-decoration: none;
   color: #555555;
-  font-family: sans-serif;
-  font-weight: 600;
+  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-size: .9rem;
+  font-weight: 500;
 }
 
 .pagination li.active a {
@@ -100,6 +108,7 @@ body {
     flex-direction: column;
     height: auto;
     align-items: center;
+    margin-top: 40px;
   }
 
   .DrawingsIndex {
@@ -136,9 +145,21 @@ body {
   .DrawingAndTextContainer {
     width: 100%;
     padding: 10px;
+    margin-top: 80px;
   }
 
   .Drawing img {
     max-width: 100%;
+  }
+
+
+  /* Styling Previous Label */
+  .pagination li:first-child a {
+    margin-right: 10px;
+  }
+
+  /* Styling Next Label */
+  .pagination li:last-child a {
+    margin-left: 10px;
   }
 }

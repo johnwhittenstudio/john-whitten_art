@@ -46,66 +46,36 @@ function DrawingsIndex() {
           </div>
         </Link>
       </header >
-      {/* <div className={classes.DrawingAndTextContainer}>
+      <div className={classes.DrawingAndTextContainer}>
         <div className={classes.DrawingsIndex}>
-        {paginatedDataState.map((drawing, index) => (
-            <Drawing
-              key={index}
-              title={<h4 className={classes.DrawingInfo}>{drawing?.title}</h4>}
-              description={<p className={classes.DrawingInfo}>{drawing?.description}</p>}
-              size={<p className={classes.DrawingInfo}>{drawing?.size}</p>}
-              year={<p className={classes.DrawingInfo}>{drawing?.year}</p>}
-              image={drawing?.image}
-            />
+          {paginatedDataState.map((drawing, index) => (
+            <div key={index} className={classes.DrawingInfo}>
+              <h4>{drawing?.title}</h4>
+              <p>{drawing?.description}</p>
+              <p>{drawing?.size}</p>
+              <p>{drawing?.year}</p>
+            </div>
           ))}
           <div className={classes.PaginationContainer}>
             <ReactPaginate
               pageCount={pageCountState}
               onPageChange={handlePageClick}
-              forcePage={currentPage} // zero-based index
+              forcePage={currentPage}
               marginPagesDisplayed={1}
               pageRangeDisplayed={2}
-              breakLabel={"..."}
-              previousLabel={"<"}
-              nextLabel={">"}
+              // breakLabel={"..."}
+              previousLabel={"< PREV "}
+              nextLabel={"NEXT >"}
               containerClassName={classes.pagination}
               activeClassName={classes.active}
               renderOnZeroPageCount={null}
             />
           </div>
         </div>
-      </div> */}
-      <div className={classes.DrawingAndTextContainer}>
-  <div className={classes.DrawingsIndex}>
-    {paginatedDataState.map((drawing, index) => (
-      <div key={index} className={classes.DrawingInfo}>
-        <h4>{drawing?.title}</h4>
-        <p>{drawing?.description}</p>
-        <p>{drawing?.size}</p>
-        <p>{drawing?.year}</p>
+        <div className={classes.Drawing}>
+          <img src={paginatedDataState[0]?.image} alt={paginatedDataState[0]?.title} />
+        </div>
       </div>
-    ))}
-    <div className={classes.PaginationContainer}>
-      <ReactPaginate
-        pageCount={pageCountState}
-        onPageChange={handlePageClick}
-        forcePage={currentPage}
-        marginPagesDisplayed={1}
-        pageRangeDisplayed={2}
-        breakLabel={"..."}
-        previousLabel={"<"}
-        nextLabel={">"}
-        containerClassName={classes.pagination}
-        activeClassName={classes.active}
-        renderOnZeroPageCount={null}
-      />
-    </div>
-  </div>
-  <div className={classes.Drawing}>
-    <img src={paginatedDataState[0]?.image} alt={paginatedDataState[0]?.title} />
-  </div>
-</div>
-
     </div>
   );
 }
