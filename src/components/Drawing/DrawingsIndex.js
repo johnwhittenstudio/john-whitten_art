@@ -46,7 +46,7 @@ function DrawingsIndex() {
           </div>
         </Link>
       </header >
-      <div className={classes.DrawingAndTextContainer}>
+      {/* <div className={classes.DrawingAndTextContainer}>
         <div className={classes.DrawingsIndex}>
         {paginatedDataState.map((drawing, index) => (
             <Drawing
@@ -74,7 +74,38 @@ function DrawingsIndex() {
             />
           </div>
         </div>
+      </div> */}
+      <div className={classes.DrawingAndTextContainer}>
+  <div className={classes.DrawingsIndex}>
+    {paginatedDataState.map((drawing, index) => (
+      <div key={index} className={classes.DrawingInfo}>
+        <h4>{drawing?.title}</h4>
+        <p>{drawing?.description}</p>
+        <p>{drawing?.size}</p>
+        <p>{drawing?.year}</p>
       </div>
+    ))}
+    <div className={classes.PaginationContainer}>
+      <ReactPaginate
+        pageCount={pageCountState}
+        onPageChange={handlePageClick}
+        forcePage={currentPage}
+        marginPagesDisplayed={1}
+        pageRangeDisplayed={2}
+        breakLabel={"..."}
+        previousLabel={"<"}
+        nextLabel={">"}
+        containerClassName={classes.pagination}
+        activeClassName={classes.active}
+        renderOnZeroPageCount={null}
+      />
+    </div>
+  </div>
+  <div className={classes.Drawing}>
+    <img src={paginatedDataState[0]?.image} alt={paginatedDataState[0]?.title} />
+  </div>
+</div>
+
     </div>
   );
 }
