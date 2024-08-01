@@ -57,13 +57,14 @@ body {
 .DrawingInfo h4, .DrawingInfo p {
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
   margin-bottom: 5px;
-  font-size: .9rem;
+  font-size: .85rem;
   font-weight: 500;
   color: #555555;
 }
 
 .DrawingInfo h4 {
-  font-weight: 800;
+  font-weight: 600;
+  font-size: .8rem;
 }
 
 .Drawing img {
@@ -76,12 +77,15 @@ body {
 }
 
 .PaginationContainer {
-  margin-top: 20px;
+
+  width: 450px;
+  margin-bottom: 20px;
 }
 
 .pagination {
   display: flex;
   justify-content: flex-start;
+  cursor: pointer;
 }
 
 .pagination li {
@@ -94,13 +98,32 @@ body {
   text-decoration: none;
   color: #555555;
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
-  font-size: .9rem;
+  font-size: .8rem;
   font-weight: 500;
 }
 
 .pagination li.active a {
   color: #0022a3;
 }
+
+  /* Styling Previous Label */
+  .pagination li:first-child a {
+    margin-right: 5px;
+  }
+
+  .pagination li:first-child a:hover {
+    color: #0022a3;
+  }
+
+  /* Styling Next Label */
+  .pagination li:last-child a {
+    margin-left: 5px;
+  }
+
+  .pagination li:last-child a:hover {
+    color: #0022a3;
+  }
+
 
 /* Responsive Layout for Tablet and Mobile */
 @media (max-width: 1024px) {
@@ -123,6 +146,12 @@ body {
     width: 100%;
     margin: 0;
     order: 1;
+  }
+
+  .PaginationContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
@@ -155,11 +184,11 @@ body {
 
   /* Styling Previous Label */
   .pagination li:first-child a {
-    margin-right: 10px;
+    margin-right: 5px;
   }
 
   /* Styling Next Label */
   .pagination li:last-child a {
-    margin-left: 10px;
+    margin-left: 5px;
   }
 }

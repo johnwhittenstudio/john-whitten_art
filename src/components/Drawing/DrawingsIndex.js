@@ -64,8 +64,8 @@ function DrawingsIndex() {
               marginPagesDisplayed={1}
               pageRangeDisplayed={2}
               // breakLabel={"..."}
-              previousLabel={"< PREV "}
-              nextLabel={"NEXT >"}
+              previousLabel={"<"}
+              nextLabel={">"}
               containerClassName={classes.pagination}
               activeClassName={classes.active}
               renderOnZeroPageCount={null}
