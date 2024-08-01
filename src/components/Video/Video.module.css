@@ -39,8 +39,38 @@
 }
 
 .Video .ImageContainer {
-  width: 100%; /* Adjust based on your design */
+  /* width: '1000px'; 
+  height: '667px';  */
   height: auto;
   margin: 0 auto;
   position: relative;
+}
+
+
+/* -------------------- tablet -------------------- */
+
+@media (max-width: 1000px) {
+  
+  .Video .ImageContainer {
+    width: 100%;
+    /* height: 80%;
+    margin: 0 auto;
+    position: relative; */
+  }
+  
+  .Video .ImageContainer img {
+    width: 80%;
+    /* height: 80%; */
+    margin: 0 auto;
+    position: relative;
+  }
+
+
+}
+
+
+/* -------------------- mobile -------------------- */
+
+@media (max-width: 500px) {
+
 }
