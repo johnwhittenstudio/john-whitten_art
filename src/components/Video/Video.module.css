@@ -1,13 +1,10 @@
-
 * {
   margin: 0;
   font-family: "Allerta";
-  overflow-y: hidden;
   overflow-x: hidden;
 }
 
 .Video {
-  position: static;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,10 +16,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 9999;
-}
-
-.Video .Logo {
   z-index: 9999;
 }
 
@@ -39,38 +32,35 @@
 }
 
 .Video .ImageContainer {
-  /* width: '1000px'; 
-  height: '667px';  */
-  height: auto;
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
   position: relative;
 }
 
+.Video .ImageContainer img {
+  width: 100%;
+  display: block;
+}
 
 /* -------------------- tablet -------------------- */
-
 @media (max-width: 1000px) {
-  
   .Video .ImageContainer {
     width: 100%;
-    /* height: 80%;
-    margin: 0 auto;
-    position: relative; */
   }
   
   .Video .ImageContainer img {
-    width: 80%;
-    /* height: 80%; */
-    margin: 0 auto;
-    position: relative;
+    width: 100%;
   }
-
-
 }
 
-
 /* -------------------- mobile -------------------- */
-
 @media (max-width: 500px) {
+  .Video .ImageContainer {
+    max-width: 100%;
+  }
 
+  .Video .ImageContainer img {
+    width: 100%;
+  }
 }

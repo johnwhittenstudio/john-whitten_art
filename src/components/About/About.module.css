@@ -1,3 +1,18 @@
+p a {
+  color: inherit; /* Keeps the text color same as the paragraph */ 
+  /* text-decoration: underline;  */
+  font-weight: inherit; /* Inherit font weight */
+  font-family: inherit; /* Inherit font family */
+}
+
+a {
+  display: inline;
+}
+
+a:hover {
+  color: #0022a3;
+}
+
 .About {
   max-height: 100%;
   width: 100%;
@@ -35,7 +50,6 @@
 
 .About .Text p {
   color: #555555;
-  display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -50,11 +64,11 @@
 }
 
 .About .AboutIcons {
-  width: 100%;
+  width: 350px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   cursor: pointer;
-  margin-bottom: 10%;
+  margin: 25px;
 }
 
 .About .AboutIcons svg path {
@@ -76,22 +90,13 @@
 @media (max-width: 900px) {
 
   .About .Bio {
-    /* margin-left: 45px; */
     width: 500px;
   }
 
   .About .Text p {
-    color: #555555;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1rem;
-    margin: 20px 5px 20px 5px;
     width: 500px;
   }
 }
-
 
 
 /* -------------------- mobile -------------------- */
@@ -108,13 +113,11 @@
 
   .About .Bio {
     margin-bottom: 30px;
-    /* margin-left: 30px; */
     width: 375px;
   }
 
   .About .Text p {
     margin-bottom: 50px;
-    /* margin-left: 40px; */
     width: 350px;
   }
 
@@ -124,7 +127,6 @@
     justify-content: space-evenly;
     align-items: center;
     cursor: pointer;
-    /* margin-left: 40px; */
   }
 
 }

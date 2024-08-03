@@ -5,7 +5,7 @@ import classes from './Home.module.css'
 
 const Home = () => (
   <main>
-    <div className={classes.Home}>
+    <div className={classes.HomeContainer}>
     <NavBar />
     <header >
       <Link to="/" activestyle>

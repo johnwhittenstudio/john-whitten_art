@@ -1,11 +1,11 @@
-.Home {
+.HomeContainer {
   margin: 0;
   height: 100vh;
   background-size: cover;
   z-index: 1;
 }
 
-.Home header {
+.HomeContainer header {
   height: 95px;
   display: flex;
   align-items: center;
@@ -15,7 +15,7 @@
 
 
 
-.Home .Logo a {
+.HomeContainer .Logo a {
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
   font-size: 30px;
   line-height: 1em;
@@ -28,7 +28,7 @@
   text-decoration: none;
 }
 
-.Home .Logo a:hover {
+.HomeContainer .Logo a:hover {
   color: #0022a3;
 }
 

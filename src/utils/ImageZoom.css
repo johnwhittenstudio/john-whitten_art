@@ -1,0 +1,19 @@
+/* ImageZoom.css */
+.image-zoom-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.image-zoom {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.image-zoom-container:hover .image-zoom {
+  transform: scale(2.5); /* Adjust the zoom scale as needed */
+  cursor: zoom-in;
+}

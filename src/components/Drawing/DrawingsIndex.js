@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import ReactPaginate from 'react-paginate';
 import classes from "./Drawings.module.css";
 import data from "../../data/drawings.js";
-import Drawing from "./Drawing.js";
 import { paginate } from "../../utils/paginate";
+
 
 function DrawingsIndex() {
   const [currentPage, setCurrentPage] = useState(0);
@@ -61,7 +61,7 @@ function DrawingsIndex() {
               pageCount={pageCountState}
               onPageChange={handlePageClick}
               forcePage={currentPage}
-              marginPagesDisplayed={1}
+              marginPagesDisplayed={10}
               pageRangeDisplayed={2}
               // breakLabel={"..."}
               previousLabel={"<"}
