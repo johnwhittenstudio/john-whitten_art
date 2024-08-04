@@ -4,6 +4,24 @@
   text-decoration: none;
 }
 
+.NavBar .MobileNavigation {
+  display: none; /* Hidden by default */
+}
+
+.NavBar .MobileNavigation.open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  background-color: #fff;
+  position: fixed; /* Make it fixed to the viewport */
+  top: 0;
+  left: 0;
+  overflow: hidden; /* Hide overflow content */
+  z-index: 9999; /* Ensure it is above other content */
+}
+
 .Navigation {
   position: absolute;
   top: 0;
@@ -34,9 +52,9 @@
 .NavBar nav ul {
   position: relative;
   display: flex;
-  width: 100%;
+  width: 250px;
   box-sizing: border-box;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
   list-style: none;
   padding: 20px 50px;
@@ -44,7 +62,7 @@
 }
 
 .NavBar nav ul li {
-  padding-right: 15px;
+  /* padding-right: 15px; */
   text-decoration: none;
 
 }
@@ -158,182 +176,9 @@
 
   .NavBar .Social {
     display: flex;
-    margin-top: 0;
-    padding: 20px 25px;
-  }
-
-  .NavBar .Social li svg {
-    height: 45px;
-  }
-
-  .NavBar .Social li {
-    margin-top: 0;
-    padding: 20px 25px;
-  }
-}
-
-
-/* 
-
-* {
-  margin: 0;
-  font-family: "Allerta";
-  text-decoration: none;
-}
-
-.Navigation {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.NavBar .Logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-}
-
-.NavBar .Logo a {
-  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
-  font-size: 30px;
-  line-height: 1em;
-  text-transform: uppercase;
-  letter-spacing: .15em;
-  font-weight: 500;
-  font-style: normal;
-  color: #00121a;  
-  z-index: 9999;
-  text-decoration: none;
-}
-
-.NavBar nav ul {
-  position: relative;
-  display: flex;
-  width: 100%;
-  box-sizing: border-box;
-  justify-content: flex-start;
-  align-items: center;
-  list-style: none;
-  padding: 20px 50px;
-  margin-top: 15px;
-}
-
-.NavBar nav ul li {
-  padding-right: 15px;
-  text-decoration: none;
-}
-
-.NavBar nav ul li a {
-  text-decoration: none;
-  color: #555555;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  text-transform: none;
-  letter-spacing: 0em;
-  line-height: 1.6em;
-  font-size: .9rem;
-  display: block;
-  padding: 0.2em;
-  cursor: pointer;
-}
-
-.NavBar a:hover {
-  color: #0022a3;
-}
-
-.NavBar nav ul li a:active {
-  color: #0022a3;
-}
-
-.NavBar nav a:active {
-  color: #0022a3;
-}
-
-.NavBar .MobileNavigation {
-  display: none;
-}
-
-.NavBar .Social svg path {
-  cursor: pointer;
-}
-
-.NavBar .Social svg path:hover {
-  color: #0022a3;
-}
-
-.Hamburger {
-  margin-left: 20px;
-  width: 40px;
-  height: 40px; 
-  cursor: pointer;
-}
-
-.NavBar .Social {
-  display: none;
-}
-
-.Footer {
-  display: none;
-}
-
-@media (max-width: 1100px) {
-  .NavBar {
-    width: 100%;
-  }
-
-  .NavBar .MobileNavigation {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    background-color: #fff;
-  }
-
-  .NavBar .Logo {
-    display: none;
-  }
-
-  .NavBar nav ul {
-    position: fixed; 
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    background-color: #fff;
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    padding: 100px 0; 
-  }
-
-  .NavBar nav ul li {
-    text-align: center;
-    margin: 30px 0;
-  }
-
-  .NavBar nav ul li a {
-    font-size: 26px;
-    color: #333;
-  }
-
-  .NavBar nav ul li a:hover {
-    color: #0022a3;
-  }
-
-  .NavBar .MobileNavigation .Hamburger {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    z-index: 10000; 
-  }
-
-  .NavBar .Social {
-    display: flex;
     margin-top: 0;
     padding: 20px 25px;
   }
@@ -346,4 +191,4 @@
     margin-top: 0;
     padding: 20px 25px;
   }
-} */
+}

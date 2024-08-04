@@ -5,8 +5,8 @@ import { BrowserRouter as Router, Routes, Route}
 import LandingPage from './../src/components/LandingPage/LandingPage';
 import Home from './../src/components/Home/Home';
 import Drawing from './components/Drawing/DrawingGallery';
-import Photo from './../src/components/Photo/PhotoControl';
-import Video from './../src/components/Video/Video';
+// import Photo from './../src/components/Photo/PhotoControl';
+// import Video from './../src/components/Video/Video';
 import About from './../src/components/About/About';
 import React from 'react';
 import './App.css';
@@ -23,8 +23,8 @@ return (
         <Route exact path="/" element={<LandingPage/>} />
         <Route path="/home" element={<Home/>} />
         <Route path='/drawing' element={<Drawing/>} />
-        <Route path='/photo' element={<Photo/>} />
-        <Route path='/video' element={<Video/>} />
+        {/* <Route path='/photo' element={<Photo/>} />
+        <Route path='/video' element={<Video/>} /> */}
         <Route path='/about' element={<About/>} />
     </Routes>
     </Router>

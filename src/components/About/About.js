@@ -1,5 +1,4 @@
-import { FaYoutube, FaInstagramSquare, FaGithub, FaLinkedin } from "react-icons/fa";
-import { GrMail } from "react-icons/gr";
+import { FiYoutube, FiInstagram, FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import bio from './../img/about.jpg'
 import NavBar from "../NavBar/NavBar"
@@ -31,15 +30,15 @@ const About = () => {
             John currently serves as director of the artist-collective gallery <a href="https://www.wellwellprojects.com" target="_blank" rel="noopener noreferrer">Well Well Projects</a>, which he co-founded in 2021. In 2018, he co-founded the artist-collective gallery <a href="https://www.carnationcontemporary.com" target="_blank" rel="noopener noreferrer">Carnation Contemporary</a> and the nomadic artist residency and exhibition project <a href="https://www.thunderstruckcollective.com" target="_blank" rel="noopener noreferrer">Thunderstruck</a>.</p>
           </div>
           <div className={classes.AboutIcons}>
-            <GrMail color="#555555" size='30px' style={{padding: '1%'}}
+            <FiMail color="#555555" size='30px' style={{padding: '1%'}}
               onClick={handleURL('mailto:johnwhitten.studio@gmail.com')} />
-            <FaInstagramSquare color="#555555" size='30px' style={{padding: '1%'}}
+            <FiInstagram color="#555555" size='30px' style={{padding: '1%'}}
               onClick={handleURL('https://www.instagram.com/john.whitten/?hl=en')} />
-            <FaGithub color="#555555" size='30px' style={{padding: '1%'}}
+            <FiGithub color="#555555" size='30px' style={{padding: '1%'}}
               onClick={handleURL('https://github.com/johnwhittenstudio')} />
-            <FaLinkedin color="#555555" size='30px' style={{padding: '1%'}}
+            <FiLinkedin color="#555555" size='30px' style={{padding: '1%'}}
               onClick={handleURL('https://www.linkedin.com/in/johnwhittenstudio/')} />
-            <FaYoutube color="#555555" size='30px' style={{padding: '1%'}}
+            <FiYoutube color="#555555" size='30px' style={{padding: '1%'}}
               onClick={handleURL('https://www.youtube.com/channel/UC-V6tMaHcYExkqCy-NWzTxQ/featured')} />
         </div>
       </div>

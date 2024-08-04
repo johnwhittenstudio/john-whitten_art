@@ -1,3 +1,10 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 p a {
   color: inherit; /* Keeps the text color same as the paragraph */ 
   /* text-decoration: underline;  */
@@ -13,9 +20,14 @@ a:hover {
   color: #0022a3;
 }
 
+/* Prevent Horizontal Scrolling */
+body {
+  overflow-x: hidden;
+}
+
+/* About Page Styles */
 .About {
-  max-height: 100%;
-  width: 100%;
+  max-height: 100vh; /* Ensure full viewport height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,9 +35,12 @@ a:hover {
 }
 
 .AboutContainer {
-  margin: 0;
+  width: 100%;
+  flex-grow: 1;
+  overflow: hidden; /* Prevent overflow */
 }
 
+/* Header */
 .AboutContainer header {
   height: 95px;
   display: flex;
@@ -34,11 +49,10 @@ a:hover {
   z-index: 9999;
 }
 
-
+/* Logo */
 .AboutContainer .Logo a {
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
   font-size: 30px;
-  line-height: 1em;
   text-transform: uppercase;
   letter-spacing: .15em;
   font-weight: 500;
@@ -48,6 +62,7 @@ a:hover {
   text-decoration: none;
 }
 
+/* Text */
 .About .Text p {
   color: #555555;
   justify-content: center;
@@ -58,24 +73,28 @@ a:hover {
   width: 800px;
 }
 
+/* Bio */
 .About .Bio {
   margin: 30px 5px;
   width: 800px;
 }
 
+/* About Icons */
 .About .AboutIcons {
   width: 350px;
   display: flex;
   justify-content: space-evenly;
   cursor: pointer;
-  margin: 25px;
+  margin: 25px auto;
 }
 
+/* Adjust Hover States */
 .About .AboutIcons svg path {
   cursor: pointer;
 }
 
-.About .AboutIcons svg path:hover {
+.About .AboutIcons svg path:hover,
+.About .AboutIcons svg path:active {
   color: #0022a3;
 }
 
@@ -90,11 +109,17 @@ a:hover {
 @media (max-width: 900px) {
 
   .About .Bio {
-    width: 500px;
+    width: 90%;
+    margin: 30px auto;
   }
 
   .About .Text p {
-    width: 500px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .About .AboutIcons {
+    margin: 30px auto;
   }
 }
 
@@ -105,6 +130,7 @@ a:hover {
   
   .AboutContainer {
     width: 100%;
+    flex-grow: 1;
   }
 
   .AboutContainer header {
@@ -112,21 +138,22 @@ a:hover {
   }
 
   .About .Bio {
-    margin-bottom: 30px;
-    width: 375px;
+    margin: 50px auto;
+    width: 90%;
   }
 
   .About .Text p {
-    margin-bottom: 50px;
-    width: 350px;
+    margin: auto;
+    width: 85%;
   }
 
   .About .AboutIcons {
-    width: 390px;
+    width: 90%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     cursor: pointer;
+    margin-bottom: 20px;
   }
 
 }
