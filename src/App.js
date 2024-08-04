@@ -12,8 +12,6 @@ import React from 'react';
 import './App.css';
 
 
-
-
 function App() {
 return (
   <>
@@ -34,3 +32,23 @@ return (
 }
   
 export default App;
+
+
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import Home from './src/components/Home/Home';
+// import About from './src/components/About/About';
+// // Import other components as needed
+
+// function App() {
+//   return (
+//     <Router>
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/about" element={<About />} />
+//         {/* Define other routes here */}
+//       </Routes>
+//     </Router>
+//   );
+// }
+
+// export default App;

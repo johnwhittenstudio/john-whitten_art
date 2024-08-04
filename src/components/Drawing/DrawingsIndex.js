@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import NavBar from "../NavBar/NavBar";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import ReactPaginate from 'react-paginate';
 import classes from "./Drawings.module.css";
 import data from "../../data/drawings.js";
@@ -39,13 +39,13 @@ function DrawingsIndex() {
   return (
     <div className={classes.DrawingsIndexContainer}>
       <NavBar />
-      <header >
+      {/* <header >
         <Link to="/" activestyle>
           <div className={classes.Logo}>
             <h3><Link to="/">John Whitten</Link></h3>
           </div>
         </Link>
-      </header >
+      </header > */}
       <div className={classes.DrawingAndTextContainer}>
         <div className={classes.DrawingsIndex}>
           {paginatedDataState.map((drawing, index) => (

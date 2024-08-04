@@ -17,15 +17,15 @@ body {
   height: 100vh;
 }
 
-.DrawingsIndexContainer header {
+/* .DrawingsIndexContainer header {
   height: 95px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-}
+} */
 
-.DrawingsIndexContainer .Logo a {
+/* .DrawingsIndexContainer .Logo a {
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
   font-size: 30px;
   text-transform: uppercase;
@@ -33,7 +33,7 @@ body {
   font-weight: 500;
   color: #00121a;
   text-decoration: none;
-}
+} */
 
 /* Layout for Drawing Info and Image */
 .DrawingAndTextContainer {

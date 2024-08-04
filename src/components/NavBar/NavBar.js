@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import classes from './NavBar.module.css';
 import MobileNavigation from './MobileNavigation';
 import Navigation from './Navigation';
+import logo from './../img/logos/jw-logo.png';
 
 const NavBar = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1100);
@@ -20,7 +21,12 @@ const NavBar = () => {
 
   return (
     <div className={classes.NavBar}>
-      {isMobile ? <MobileNavigation /> : <Navigation />}
+      <header className={classes.Header}>
+        <div className={classes.LogoWrapper}>
+          <img src={logo} alt="Logo" className={classes.Logo} />
+        </div>
+        {isMobile ? <MobileNavigation /> : <Navigation />}
+      </header>
     </div>
   );
 };

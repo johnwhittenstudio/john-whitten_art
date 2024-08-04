@@ -14,13 +14,13 @@ const About = () => {
   return ( 
     <div className={classes.AboutContainer}>
         <NavBar />
-        <header >
+        {/* <header >
         <Link to="/" activestyle>
           <div className={classes.Logo}>
             <h3><Link to="/">John Whitten</Link></h3>
           </div>
         </Link>
-        </header >
+        </header > */}
         <div className={classes.About} id="about">
             <img className={classes.Bio} src={bio} alt="me"></img>
           <div className={classes.Text} >

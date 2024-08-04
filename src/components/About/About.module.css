@@ -27,7 +27,7 @@ body {
 
 /* About Page Styles */
 .About {
-  max-height: 100vh; /* Ensure full viewport height */
+  max-height: 100vh; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,11 +130,20 @@ body {
   
   .AboutContainer {
     width: 100%;
-    flex-grow: 1;
+    height: 100vh;
+    margin: 27px auto; /* Adjust padding for mobile to avoid cutoff */
+
   }
 
   .AboutContainer header {
-    margin-left: 65px;
+    margin-left: 25px;
+    margin-right: 0;
+    width: 100%;
+    height: 40px;
+  }
+
+  .AboutContainer .Logo a {
+    z-index: 9999;
   }
 
   .About .Bio {

@@ -24,7 +24,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  /* z-index: 9999; */
 }
 
 /* Logo */
@@ -118,19 +118,20 @@
 
 /* -------------------- in between tablet and mobile -------------------- */
 
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   .HomeItem {
-    height: 450px; /* Further reduce item height for smaller screens */
+    height: 500px; 
     padding-bottom: 1%;
   }
-}
+} */
 
 /* -------------------- mobile -------------------- */
 
 @media (max-width: 500px) {
   .HomeContainer {
     width: 100%;
-    margin-bottom: 20px; /* Adjust padding for mobile to avoid cutoff */
+    height: 100vh;
+    margin: 27px auto; /* Adjust padding for mobile to avoid cutoff */
 
   }
 

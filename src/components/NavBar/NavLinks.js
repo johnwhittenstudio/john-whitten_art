@@ -17,11 +17,6 @@ const NavLinks = (props) => {
 
   return ( 
     <ul>
-      {/* <Link to="/" activestyle>
-        <div className={classes.Logo}>
-          <h3><Link to="/">John Whitten</Link></h3>
-        </div>
-      </Link> */}
       <motion.li 
         initial={animateFrom}
         animate={animateTo}

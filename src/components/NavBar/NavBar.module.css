@@ -1,42 +1,58 @@
+/* Global Reset */
 * {
   margin: 0;
   font-family: "Allerta";
   text-decoration: none;
 }
 
-.NavBar .MobileNavigation {
-  display: none; /* Hidden by default */
-}
-
-.NavBar .MobileNavigation.open {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.NavBar {
   width: 100%;
-  height: 100vh; /* Full viewport height */
   background-color: #fff;
-  position: fixed; /* Make it fixed to the viewport */
-  top: 0;
-  left: 0;
-  overflow: hidden; /* Hide overflow content */
-  z-index: 9999; /* Ensure it is above other content */
+  position: relative;
 }
 
+/* Header Styling */
+.Header {
+  display: flex;
+  justify-content: center; /* Center the contents horizontally */
+  align-items: center;
+  height: 95px;
+  position: relative; /* Make sure navigation can be positioned relative to this */
+}
+
+/* Logo Wrapper */
+.LogoWrapper {
+  display: flex;
+  justify-content: center; /* Center the logo horizontally */
+  flex: 1;
+}
+
+/* Logo Styling */
+.Logo {
+  width: 250px; /* Adjust the size as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Navigation Styling */
 .Navigation {
+  display: flex;
+  justify-content: flex-end; /* Align navigation items to the right */
+  align-items: center;
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
+  right: 20px; /* Adjust the right position as needed */
+  top: 50%; /* Center vertically within the Header */
+  transform: translateY(-50%); /* Adjust for perfect vertical centering */
 }
 
-.NavBar .Logo {
+/* .NavBar .Logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 9999;
-}
+  flex: 1; 
+  
+} */
 
-.NavBar .Logo a {
+/* .NavBar .Logo a {
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
   font-size: 30px;
   line-height: 1em;
@@ -47,55 +63,21 @@
   color: #00121a;  
   z-index: 9999;
   text-decoration: none;
-}
+} */
 
 .NavBar nav ul {
-  position: relative;
   display: flex;
-  width: 250px;
-  box-sizing: border-box;
-  justify-content: space-evenly;
-  align-items: center;
-  list-style: none;
-  padding: 20px 50px;
-  margin-top: 15px;
+  justify-content: space-evenly; 
+  list-style-type: none;
+  margin: 25px auto;
+  width: 150px;
 }
 
-.NavBar nav ul li {
-  /* padding-right: 15px; */
-  text-decoration: none;
 
-}
-
-.NavBar nav ul li a {
-  text-decoration: none;
-  color: #555555;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  text-transform: none;
-  letter-spacing: 0em;
-  line-height: 1.6em;
-  font-size: .9rem;
-  display: block;
-  padding: 0.2em;
-  cursor: pointer;
-}
-
-.NavBar a:hover {
-  color: #0022a3;
-}
-
-.NavBar nav ul li a:active {
-  color:  #0022a3;
-}
-
-.NavBar nav a:active {
-  color:  #0022a3;
-}
-
-.NavBar .MobileNavigation {
-  display: none;
+.NavBar .Hamburger {
+  margin-left: 20px;
+  width: 35px;
+  height: 85px;
 }
 
 .NavBar .Social svg path {
@@ -106,36 +88,49 @@
   color:  #0022a3;
 }
 
-.Hamburger {
-  margin-left: 20px;
-  width: 40px;
-  height: 90px;
-}
-
 .NavBar .Social {
   display: none;
 }
 
-.Footer {
+.MobileNavigation {
   display: none;
 }
 
+
+
 @media (max-width: 1100px) {
-  .NavBar {
-    width: 100%;
+  .Navigation {
+    display: none;
   }
 
-  .NavBar .MobileNavigation {
+  .MobileNavigation {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+    /* height: 100vh; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
     background-color: #fff;
+  }
+
+  .LogoWrapper {
+    margin: 30px 0;
   }
 
   .NavBar .Logo {
     display: none;
+    z-index: 99999;
   }
+
+  .MobileLogo {
+    width: 250px;
+    height: auto;
+    margin-left: 35px;
+  }
+
 
   .NavBar nav ul {
     position: absolute;
@@ -146,16 +141,16 @@
     padding: 35px 0px;
     background-color: #fff;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     overflow-x: hidden;
     overflow-y: hidden;
-    margin-top: 100px;
-    padding-bottom: 150px;
+    margin: 0px;
+    padding: 150px auto;
   }
 
   .NavBar nav ul li {
     text-align: left;
-    margin: 30px 0;
+    margin: 40px auto;
   }
 
   .NavBar nav ul li a {
@@ -172,6 +167,7 @@
     left: 0;
     top: 0;
     cursor: pointer;
+    z-index: 9999;
   }
 
   .NavBar .Social {
@@ -192,3 +188,9 @@
     padding: 20px 25px;
   }
 }
+
+
+@media (max-width: 500px) {
+
+  }
+
