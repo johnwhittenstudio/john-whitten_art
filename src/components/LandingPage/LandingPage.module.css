@@ -2,23 +2,28 @@
   margin: 0;
   height: 100vh;
   background: url(../img/00.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   z-index: 1;
 }
 
-
 .LandingPage header {
-  height: 95px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  z-index: 9999;
+  align-items: center;
+  height: 95px;
+  position: relative;
 }
 
+.LandingPage .LogoWrapper {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
 
+.LandingPage .Logo {
+  width: 250px;
+  height: auto;
+}
 
 .LandingPage h1 {
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
@@ -28,13 +33,12 @@
   letter-spacing: .15em;
   font-weight: 500;
   font-style: normal;
-  color: #fff;  
-  z-index: 9999;
+  color: #fff;
   text-decoration: none;
 }
 
 .LandingPage main {
-  height: calc(100% - 100px);
+  height: calc(100% - 95px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,14 +54,15 @@
   color: white;
   padding: 15px 20px;
   text-transform: uppercase;
-  margin-bottom: 80px;
   font-size: .8em;
   letter-spacing: .15em;
   font-weight: 500;
   cursor: pointer;
 }
 
-.LandingPage button:hover  {
+.LandingPage button:hover {
   background-color: white;
   color: rgb(0, 0, 0);
 }
+
+

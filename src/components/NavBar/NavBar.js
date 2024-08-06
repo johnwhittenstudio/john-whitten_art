@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import classes from './NavBar.module.css';
 import MobileNavigation from './MobileNavigation';
 import Navigation from './Navigation';
@@ -23,7 +24,9 @@ const NavBar = () => {
     <div className={classes.NavBar}>
       <header className={classes.Header}>
         <div className={classes.LogoWrapper}>
-          <img src={logo} alt="Logo" className={classes.Logo} />
+        <Link to="/">
+            <img src={logo} alt="Logo" className={classes.Logo} />
+          </Link>
         </div>
         {isMobile ? <MobileNavigation /> : <Navigation />}
       </header>

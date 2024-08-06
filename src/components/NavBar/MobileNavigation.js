@@ -1,8 +1,9 @@
 // import { useState, useEffect } from 'react';
-// import { useLocation } from 'react-router-dom';
+// import { useLocation, Link } from 'react-router-dom';
 // import { CgMenu, CgClose } from 'react-icons/cg';
 // import classes from './NavBar.module.css';
 // import NavLinks from './NavLinks';
+// import logo from './../img/logos/jw-logo.png';
 
 // const MobileNavigation = () => {
 //   const [open, setOpen] = useState(false);
@@ -20,6 +21,7 @@
 //       document.body.classList.remove('menu-open');
 //     }
 //   }, [open]);
+  
 
 //   const hamburgerIcon = (
 //     <CgMenu
@@ -42,7 +44,12 @@
 //   const closeMobileMenu = () => setOpen(false);
 
 //   return (
-//     <nav className={classes.MobileNavigation}>
+//     <nav className={`${classes.MobileNavigation} ${open ? classes.open : ''}`}>
+//       <div className={classes.LogoWrapper}>
+//         <Link to="/">
+//         <img src={logo} alt="Logo" className={classes.MobileLogo} />
+//         </Link>
+//       </div>
 //       {open ? closeIcon : hamburgerIcon}
 //       {open && <NavLinks isMobile={true} closeMobileMenu={closeMobileMenu} />}
 //     </nav>
@@ -75,12 +82,14 @@ const MobileNavigation = () => {
     }
   }, [open]);
 
+  const toggleMenu = () => setOpen(!open);
+
   const hamburgerIcon = (
     <CgMenu
       className={classes.Hamburger}
       size="35px"
       color="#00121a"
-      onClick={() => setOpen(!open)}
+      onClick={toggleMenu}
     />
   );
 
@@ -89,21 +98,21 @@ const MobileNavigation = () => {
       className={classes.Hamburger}
       size="35px"
       color="#00121a"
-      onClick={() => setOpen(!open)}
+      onClick={toggleMenu}
     />
   );
 
-  const closeMobileMenu = () => setOpen(false);
-
   return (
     <nav className={`${classes.MobileNavigation} ${open ? classes.open : ''}`}>
-      <div className={classes.LogoWrapper}>
-        <Link to="/">
-        <img src={logo} alt="Logo" className={classes.MobileLogo} />
-        </Link>
+      <div className={classes.MobileHeader}>
+        <div className={classes.LogoWrapper}>
+          <Link to="/">
+            <img src={logo} alt="Logo" className={classes.MobileLogo} />
+          </Link>
+        </div>
+        {open ? closeIcon : hamburgerIcon}
       </div>
-      {open ? closeIcon : hamburgerIcon}
-      {open && <NavLinks isMobile={true} closeMobileMenu={closeMobileMenu} />}
+      {open && <NavLinks isMobile={true} closeMobileMenu={toggleMenu} />}
     </nav>
   );
 };

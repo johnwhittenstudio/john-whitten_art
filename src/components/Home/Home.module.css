@@ -5,7 +5,6 @@
   padding: 0;
 }
 
-
 /* Home Container */
 .HomeContainer {
   display: flex;
@@ -14,7 +13,7 @@
   width: 100%;
   background-size: cover;
   overflow: hidden;
-  padding-bottom: 20px; /* Add padding to prevent content cutoff */
+  padding-bottom: 20px;
   overflow-y: auto;
 }
 
@@ -24,7 +23,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* z-index: 9999; */
 }
 
 /* Logo */
@@ -36,11 +34,10 @@
 .HomeContainer .Logo a {
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
   font-size: 30px;
-  /* line-height: 1em; */
   text-transform: uppercase;
   letter-spacing: .15em;
   font-weight: 500;
-  color: #00121a;  
+  color: #00121a;
   text-decoration: none;
   display: inline-block;
   padding: 0;
@@ -63,6 +60,7 @@
 
 /* Home Items */
 .HomeItem {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,19 +84,46 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: opacity 0.3s ease;
 }
 
 /* Image Text */
 .ImageText {
-  text-align: center;
-  margin-top: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
   font-family: 'Arial', sans-serif;
-  color: #00121a;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
 }
 
+.HomeItemOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.HomeItem:hover .HomeItemOverlay {
+  opacity: 1;
+}
+
+.HomeItem:hover .ImageText {
+  opacity: 1;
+}
 
 /* -------------------- tablet -------------------- */
-
 @media (max-width: 900px) {
   .HomeGallery {
     grid-template-columns: 1fr;
@@ -115,24 +140,12 @@
   }
 }
 
-
-/* -------------------- in between tablet and mobile -------------------- */
-
-/* @media (max-width: 700px) {
-  .HomeItem {
-    height: 500px; 
-    padding-bottom: 1%;
-  }
-} */
-
 /* -------------------- mobile -------------------- */
-
 @media (max-width: 500px) {
   .HomeContainer {
     width: 100%;
-    height: 100vh;
-    margin: 27px auto; /* Adjust padding for mobile to avoid cutoff */
-
+    min-height: 100vh;
+    margin: 27px auto;
   }
 
   .HomeContainer header {
@@ -142,16 +155,16 @@
   }
 
   .HomeGallery {
-    grid-gap: 10px; /* Adjust gap for smaller screens */
+    grid-gap: 10px;
     width: 95%;
   }
 
   .HomeItem {
-    height: 380px; /* Further reduce item height for smaller screens */
-    padding-bottom: 0;
+    height: 450px;
+    padding-bottom: 3em;
   }
 
   .ImageText {
-    margin-bottom: 15px; /* Reduce margin-top for text to fit better */
+    margin-bottom: 55px;
   }
 }
