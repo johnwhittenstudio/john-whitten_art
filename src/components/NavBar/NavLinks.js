@@ -1,14 +1,14 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom';
 import { FiMail  } from "react-icons/fi";
-// import { ImInfo } from "react-icons/im";
 import { TiInfoOutline } from "react-icons/ti";
-
+// import { GrSatellite } from "react-icons/gr";
+// import { MdOutlineSatellite } from "react-icons/md";
+// import { RiFlashlightLine } from "react-icons/ri";
+import { BiHighlight } from "react-icons/bi";
 
 import { FiInstagram } from "react-icons/fi";
-import { FaRegNewspaper } from "react-icons/fa";
 import { CgHome } from "react-icons/cg";
-
 import classes from './NavBar.module.css'
 
 const handleURL = (url) => {
@@ -29,7 +29,7 @@ const NavLinks = (props) => {
         onClick={() => props.isMobile && props.closeMobileMenu()}>
           <Link to="/home" activestyle>
           <CgHome 
-            color="#555555" size='25px' style={{padding: '0%'}}
+            color="#555555" size='25px' style={{padding: '0%', color: '#555555' }}
             />
           {/* home */}
           </Link>
@@ -52,9 +52,11 @@ const NavLinks = (props) => {
         transition={{delay: 0.15}}
         onClick={() => props.isMobile && props.closeMobileMenu()}>
           <Link to="/drawing" activestyle>
-          <FaRegNewspaper 
-            color="#555555" size='28px' style={{padding: '0%'}}
-            />
+          <BiHighlight 
+            className={classes.CustomIcon}
+            size="28px" 
+            style={{ padding: '0%' }} 
+          />
             {/* drawings */}
           </Link>
       </motion.li>

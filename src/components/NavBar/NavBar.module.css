@@ -44,6 +44,10 @@
   transform: translateY(-50%); /* Adjust for perfect vertical centering */
 }
 
+.CustomIcon {
+  color: #555555;
+}
+
 /* .NavBar .Logo {
   display: flex;
   align-items: center;
