@@ -20,7 +20,7 @@ return (
     <Routes>
         <Route exact path="/" element={<LandingPage/>} />
         <Route path="/home" element={<Home/>} />
-        <Route path='/drawing' element={<Drawing/>} />
+        <Route path='/drawings' element={<Drawing/>} />
         {/* <Route path='/photo' element={<Photo/>} />
         <Route path='/video' element={<Video/>} /> */}
         <Route path='/about' element={<About/>} />

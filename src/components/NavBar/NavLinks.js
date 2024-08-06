@@ -1,6 +1,10 @@
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom';
-import { FiInfo, FiMail  } from "react-icons/fi";
+import { FiMail  } from "react-icons/fi";
+// import { ImInfo } from "react-icons/im";
+import { TiInfoOutline } from "react-icons/ti";
+
+
 import { FiInstagram } from "react-icons/fi";
 import { FaRegNewspaper } from "react-icons/fa";
 import { CgHome } from "react-icons/cg";
@@ -36,8 +40,8 @@ const NavLinks = (props) => {
         transition={{delay: 0.10}}
         onClick={() => props.isMobile && props.closeMobileMenu()}>
           <Link to="/about" activestyle>
-          <FiInfo 
-            color="#555555" size='25px' style={{padding: '0%'}}
+          <TiInfoOutline 
+            color="#555555" size='28px' style={{padding: '0%'}}
             />
             {/* about */}
           </Link>
@@ -49,7 +53,7 @@ const NavLinks = (props) => {
         onClick={() => props.isMobile && props.closeMobileMenu()}>
           <Link to="/drawing" activestyle>
           <FaRegNewspaper 
-            color="#555555" size='25px' style={{padding: '0%'}}
+            color="#555555" size='28px' style={{padding: '0%'}}
             />
             {/* drawings */}
           </Link>

@@ -92,8 +92,8 @@ body {
   transition: box-shadow 0.3s ease-in-out;
 }
 
-.About .AboutIcon:hover {
-  border-bottom: 2px solid #0023a3;
+.AboutIcon a:hover {
+  color: #0023a3;
 }
 
 /* Adjust Hover States */
