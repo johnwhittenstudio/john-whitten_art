@@ -12,9 +12,9 @@ const Home = () => {
     <div className={classes.HomeContainer}>
       <NavBar />
       <div className={classes.HomeGallery} id="homeGallery">
-        <div className={classes.HomeItem}>
+      <div className={classes.HomeItem}>
           <Link to="/drawings">
-            <img className={classes.HomeImage} src={image01} alt="1" />
+            <img className={classes.HomeImage} src={image01} alt="drawing gallery" />
             <div className={classes.HomeItemOverlay}>
               <p className={classes.ImageText}>drawings</p>
             </div>
@@ -22,17 +22,8 @@ const Home = () => {
           </Link>
         </div>
         <div className={classes.HomeItem}>
-          <Link to="/collaborations">
-            <img className={classes.HomeImage} src={image02} alt="2" />
-            <div className={classes.HomeItemOverlay}>
-              <p className={classes.ImageText}>collaborations</p>
-            </div>
-            <p className={classes.ImageTextBelow}>collaborations</p>
-          </Link>
-        </div>
-        <div className={classes.HomeItem}>
           <Link to="/digital">
-            <img className={classes.HomeImage} src={image03} alt="3" />
+            <img className={classes.HomeImage} src={image03} alt="digital gallery" />
             <div className={classes.HomeItemOverlay}>
               <p className={classes.ImageText}>digital</p>
             </div>
@@ -40,13 +31,21 @@ const Home = () => {
           </Link>
         </div>
         <div className={classes.HomeItem}>
+          <Link to="/collaborations">
+            <img className={classes.HomeImage} src={image02} alt="collaborations gallery" />
+            <div className={classes.HomeItemOverlay}>
+              <p className={classes.ImageText}>collaborations</p>
+            </div>
+            <p className={classes.ImageTextBelow}>collaborations</p>
+          </Link>
+        </div>
+        <div className={classes.HomeItem}>
           <Link to="/archive">
-            <img className={classes.HomeImage} src={image04} alt="4" />
+            <img className={classes.HomeImage} src={image04} alt="archive gallery" />
             <div className={classes.HomeItemOverlay}>
               <p className={classes.ImageText}>archive</p>
             </div>
             <p className={classes.ImageTextBelow}>archive</p>
-
           </Link>
         </div>
       </div>

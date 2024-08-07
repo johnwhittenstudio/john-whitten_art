@@ -137,6 +137,18 @@ body {
     flex-direction: row;
     justify-content: center;
   }
+
+  /* Styling Previous Label */
+  .pagination li:first-child a {
+    margin-right: 50px;
+    font-size: 1rem;
+  }
+
+  /* Styling Next Label */
+  .pagination li:last-child a {
+    margin-left: 50px;
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -149,13 +161,10 @@ body {
     order: 1;
   }
 
-  /* .DrawingInfo h4, .DrawingInfo p {
-    font-size: 0.9rem;
-  } */
-
   .PaginationContainer  {
     font-size: 0.8rem;
   }
+
 }
 
 @media (max-width: 480px) {
@@ -181,11 +190,13 @@ body {
 
   /* Styling Previous Label */
   .pagination li:first-child a {
-    margin-right: 5px;
+    margin-right: 50px;
+    font-size: 1rem;
   }
 
   /* Styling Next Label */
   .pagination li:last-child a {
-    margin-left: 5px;
+    margin-left: 50px;
+    font-size: 1rem;
   }
 }
