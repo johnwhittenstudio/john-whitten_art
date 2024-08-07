@@ -74,8 +74,8 @@ body {
 
 /* Bio */
 .About .Bio {
-  margin: 30px 5px;
-  width: 800px;
+  margin: 20px 5px;
+  width: 850px;
 }
 
 /* About Icons */
@@ -84,7 +84,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   cursor: pointer;
-  margin: 25px auto;
+  margin: 15px auto;
 }
 
 .About .AboutIcon {

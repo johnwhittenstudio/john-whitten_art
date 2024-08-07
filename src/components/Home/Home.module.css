@@ -134,6 +134,12 @@
   margin-top: 10px;
 }
 
+@media (max-width: 1000px) {
+  .ImageText {
+    font-size: 1.8rem;
+  }
+}
+
 /* -------------------- tablet -------------------- */
 @media (max-width: 900px) {
   .HomeGallery {
@@ -154,6 +160,10 @@
     height: 90%;
     object-fit: cover;
     transition: opacity 0.3s ease;
+  }
+
+  .ImageText {
+    font-size: 1.5rem;
   }
 
   .ImageTextBelow {

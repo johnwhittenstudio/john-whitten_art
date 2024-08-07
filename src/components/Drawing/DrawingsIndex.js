@@ -1,15 +1,14 @@
 import React, { useState, useEffect, useCallback } from "react";
 import NavBar from "../NavBar/NavBar";
-// import { Link } from "react-router-dom";
 import ReactPaginate from 'react-paginate';
 import classes from "./Drawings.module.css";
 import data from "../../data/drawings.js";
 import { paginate } from "../../utils/paginate";
 
-
 function DrawingsIndex() {
   const [currentPage, setCurrentPage] = useState(0);
-  const pageSize = 1; // Number of items per page
+  const pageSize = 1;
+  const [isZoomed, setIsZoomed] = useState(false); // State for zoom
 
   const getPaginatedData = useCallback((data, pageSize, currentPage) => {
     if (!data || data.length === 0) {
@@ -24,28 +23,36 @@ function DrawingsIndex() {
   const [pageCountState, setPageCountState] = useState(0);
 
   useEffect(() => {
-    console.log("Drawings data:", data.drawings);
     const { paginatedData, pageCount } = getPaginatedData(data.drawings, pageSize, currentPage);
     setPaginatedDataState(paginatedData);
     setPageCountState(pageCount);
-    console.log("Paginated data:", paginatedData);
-    console.log("Page count:", pageCount);
   }, [getPaginatedData, pageSize, currentPage]);
+
+    // Disable Right-Click Context Menu
+    useEffect(() => {
+      const disableContextMenu = (e) => {
+        e.preventDefault();
+      };
+      
+      document.addEventListener('contextmenu', disableContextMenu);
+  
+      // Cleanup event listener on component unmount
+      return () => {
+        document.removeEventListener('contextmenu', disableContextMenu);
+      };
+    }, []);
 
   const handlePageClick = ({ selected }) => {
     setCurrentPage(selected);
   };
 
+  const toggleZoom = () => {
+    setIsZoomed(!isZoomed);
+  };
+
   return (
     <div className={classes.DrawingsIndexContainer}>
       <NavBar />
-      {/* <header >
-        <Link to="/" activestyle>
-          <div className={classes.Logo}>
-            <h3><Link to="/">John Whitten</Link></h3>
-          </div>
-        </Link>
-      </header > */}
       <div className={classes.DrawingAndTextContainer}>
         <div className={classes.DrawingsIndex}>
           {paginatedDataState.map((drawing, index) => (
@@ -54,6 +61,8 @@ function DrawingsIndex() {
               <p>{drawing?.description}</p>
               <p>{drawing?.size}</p>
               <p>{drawing?.year}</p>
+              <br />
+              <p>(click image to zoom)</p>
             </div>
           ))}
           <div className={classes.PaginationContainer}>
@@ -63,7 +72,6 @@ function DrawingsIndex() {
               forcePage={currentPage}
               marginPagesDisplayed={10}
               pageRangeDisplayed={2}
-              // breakLabel={"..."}
               previousLabel={"<"}
               nextLabel={">"}
               containerClassName={classes.pagination}
@@ -72,8 +80,18 @@ function DrawingsIndex() {
             />
           </div>
         </div>
-        <div className={classes.Drawing}>
-          <img src={paginatedDataState[0]?.image} alt={paginatedDataState[0]?.title} />
+        <div className={`${classes.Drawing} ${isZoomed ? classes.zoomed : ''}`}>
+          <div 
+            className={`${classes["img-container"]} ${isZoomed ? classes.zoomed : ''}`}
+            onClick={toggleZoom}
+          >
+            <img 
+              src={paginatedDataState[0]?.image} 
+              alt={paginatedDataState[0]?.title}
+              className={isZoomed ? classes.zoomed : ''}
+              draggable="false" 
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -81,4 +99,3 @@ function DrawingsIndex() {
 }
 
 export default DrawingsIndex;
-

@@ -88,6 +88,14 @@ const data = {
         year: "2019",
         image: require("./../img/drawings/supernova.jpg"),
       },
+      {
+        id: 12,
+        title: 'Lunar Eclipse',
+        description: "colored pencil pencil on paper",
+        size: "12 x 18 inches",
+        year: "2019",
+        image: require("./../img/drawings/eclipse.jpg"),
+      },
   ],
 };
 

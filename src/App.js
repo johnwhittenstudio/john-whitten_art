@@ -4,10 +4,12 @@ import { BrowserRouter as Router, Routes, Route}
     from 'react-router-dom';
 import LandingPage from './../src/components/LandingPage/LandingPage';
 import Home from './../src/components/Home/Home';
-import Drawing from './components/Drawing/DrawingGallery';
-// import Photo from './../src/components/Photo/PhotoControl';
-// import Video from './../src/components/Video/Video';
 import About from './../src/components/About/About';
+import Drawing from './components/Drawing/DrawingGallery';
+import Digital from './components/Digital/DigitalGallery';
+import Collaborations from './components/Collaborations/CollaborationsGallery';
+import Archive from './components/Archive/ArchiveGallery';
+import News from './components/News/News';
 import React from 'react';
 import './App.css';
 
@@ -20,10 +22,12 @@ return (
     <Routes>
         <Route exact path="/" element={<LandingPage/>} />
         <Route path="/home" element={<Home/>} />
-        <Route path='/drawings' element={<Drawing/>} />
-        {/* <Route path='/photo' element={<Photo/>} />
-        <Route path='/video' element={<Video/>} /> */}
         <Route path='/about' element={<About/>} />
+        <Route path='/drawings' element={<Drawing/>} />
+        <Route path='/digital' element={<Digital/>} />
+        <Route path='/collaborations' element={<Collaborations/>} />
+        <Route path='/archive' element={<Archive/>} />
+        <Route path='/news' element={<News/>} />
     </Routes>
     </Router>
     {/* <Footer /> */}
@@ -32,23 +36,3 @@ return (
 }
   
 export default App;
-
-
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import Home from './src/components/Home/Home';
-// import About from './src/components/About/About';
-// // Import other components as needed
-
-// function App() {
-//   return (
-//     <Router>
-//       <Routes>
-//         <Route path="/" element={<Home />} />
-//         <Route path="/about" element={<About />} />
-//         {/* Define other routes here */}
-//       </Routes>
-//     </Router>
-//   );
-// }
-
-// export default App;

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import NavBar from "../NavBar/NavBar";
 import DrawingsIndex from "./DrawingsIndex";
 import classes from "./Drawings.module.css";
 import drawingsData from "../../data/drawings.js";
@@ -16,7 +15,6 @@ function DrawingGallery() {
 
   return (
     <div className={classes.Drawings}>
-      {/* <NavBar /> */}
       <DrawingsIndex drawings={currentDrawings} />
       <div className={classes.Pagination}>
         <ul>

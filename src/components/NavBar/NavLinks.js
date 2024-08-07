@@ -31,7 +31,6 @@ const NavLinks = (props) => {
           <CgHome 
             color="#555555" size='25px' style={{padding: '0%', color: '#555555' }}
             />
-          {/* home */}
           </Link>
       </motion.li>
       <motion.li 
@@ -43,7 +42,6 @@ const NavLinks = (props) => {
           <TiInfoOutline 
             color="#555555" size='28px' style={{padding: '0%'}}
             />
-            {/* about */}
           </Link>
       </motion.li>
       <motion.li 
@@ -51,25 +49,14 @@ const NavLinks = (props) => {
         animate={animateTo}
         transition={{delay: 0.15}}
         onClick={() => props.isMobile && props.closeMobileMenu()}>
-          <Link to="/drawing" activestyle>
+          <Link to="/news" activestyle>
           <BiHighlight 
             className={classes.CustomIcon}
             size="28px" 
             style={{ padding: '0%' }} 
           />
-            {/* drawings */}
           </Link>
       </motion.li>
-      {/* <motion.li 
-        initial={animateFrom}
-        animate={animateTo}        
-        transition={{delay: 0.20}}
-        onClick={() => props.isMobile && props.closeMobileMenu()}>
-          <Link to="/video" activestyle>
-            video
-          </Link>
-      </motion.li> */}
-
       <div className={classes.Social}>
         <motion.li 
           initial={animateFrom}
