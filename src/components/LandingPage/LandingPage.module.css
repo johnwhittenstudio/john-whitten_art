@@ -1,7 +1,7 @@
 .LandingPage {
   margin: 0;
   height: 100vh;
-  background: url(../img/00.png) no-repeat center center fixed;
+  background: url(../img/Salt_01.gif) no-repeat center center fixed;
   background-size: cover;
   z-index: 1;
 }
@@ -49,14 +49,14 @@
   background-color: rgba(255, 255, 255, 0);
   border: 2px solid white;
   border-radius: 50px;
-  height: 90px;
+  height: 95px;
   font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
   color: white;
   padding: 15px 20px;
   text-transform: uppercase;
   font-size: .8em;
   letter-spacing: .15em;
-  font-weight: 500;
+  font-weight: 800;
   cursor: pointer;
 }
 

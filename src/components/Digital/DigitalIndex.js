@@ -7,8 +7,8 @@ import { paginate } from "../../utils/paginate";
 
 function DigitalIndex() {
   const [currentPage, setCurrentPage] = useState(0);
-  const [zoomed, setZoomed] = useState(false); // Add state to manage zoom
-  const pageSize = 1; // Number of items per page
+  const pageSize = 1;
+  const [isZoomed, setIsZoomed] = useState(false); // State for zoom
 
   const getPaginatedData = useCallback((data, pageSize, currentPage) => {
     if (!data || data.length === 0) {
@@ -28,12 +28,26 @@ function DigitalIndex() {
     setPageCountState(pageCount);
   }, [getPaginatedData, pageSize, currentPage]);
 
+    // Disable Right-Click Context Menu
+    useEffect(() => {
+      const disableContextMenu = (e) => {
+        e.preventDefault();
+      };
+      
+      document.addEventListener('contextmenu', disableContextMenu);
+  
+      // Cleanup event listener on component unmount
+      return () => {
+        document.removeEventListener('contextmenu', disableContextMenu);
+      };
+    }, []);
+
   const handlePageClick = ({ selected }) => {
     setCurrentPage(selected);
   };
 
-  const handleImageClick = () => {
-    setZoomed(!zoomed); // Toggle zoomed state on click
+  const toggleZoom = () => {
+    setIsZoomed(!isZoomed);
   };
 
   return (
@@ -66,13 +80,18 @@ function DigitalIndex() {
             />
           </div>
         </div>
-        <div className={classes.Digital}>
-          <img 
-            src={paginatedDataState[0]?.image} 
-            alt={paginatedDataState[0]?.title}
-            className={zoomed ? classes.zoomed : ""} // Apply zoomed class based on state
-            onClick={handleImageClick} // Toggle zoom on click
-          />
+        <div className={`${classes.Drawing} ${isZoomed ? classes.zoomed : ''}`}>
+          <div 
+            className={`${classes["img-container"]} ${isZoomed ? classes.zoomed : ''}`}
+            onClick={toggleZoom}
+          >
+            <img 
+              src={paginatedDataState[0]?.image} 
+              alt={paginatedDataState[0]?.title}
+              className={isZoomed ? classes.zoomed : ''}
+              draggable="false" 
+            />
+          </div>
         </div>
       </div>
     </div>

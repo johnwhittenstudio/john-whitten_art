@@ -122,6 +122,7 @@ body {
 
 .pagination li.active a {
   color: #0022a3;
+  font-weight: 800;
 }
 
   /* Styling Previous Label */

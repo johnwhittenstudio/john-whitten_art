@@ -1,0 +1,175 @@
+const data = {
+  news: [
+    {
+      id: 1,
+      date: 'November 2022 - January 2023',
+      headline: "The Nexus of Here",
+      body: `
+        <p>Saturday, November 12, 2022 – Sunday, January 15, 2023</p>
+        <br />
+        <p><strong>WAVE Contemporary</strong></p>
+        <p>730 Southwest 10th Avenue, Suite 111 & 112<br/>
+        Portland, OR, 97205</p>
+        <br />
+        <p>WAVE Contemporary is excited to announce <em>The Nexus of Here</em>, an upcoming group exhibition featuring Jessi DiTillio, Claire Elliot, Tia Factor, Marcelo Fontana, Asa Mease, Midgray, Nicholas Moler-Gallardo, Susan Murrell, Hannah Newman, Morgan Rosskopf, Katherine Spinella, Michael Stephen, and John Whitten. Join us in celebrating the opening of the show on Saturday, November 12th from 5-8 pm.</p>
+        <br />
+        <p>The horizon line is a construction to explain the limitations of our bodies in relation to the world. Though we witness the horizon with our eyes, the phenomenon is ultimately imaginary–a concept to define our placement in built, natural, mental and social spaces. Delineating real, mental and imaginary space, the horizon persists as a faithful companion to travelers, explorers, dreamers, and field workers.</p>
+        <br />
+        <p>Central to the experience of the horizon is the availability of open mental and physical space. With the insatiable development of urban centers and information economies, we increasingly lose our connection with the horizon and our environment. Stable horizons give way to a mixture of depth, distance, pixels, and data. Information bubbles fragment our perception, while attention and outrage economies leave little space to change our minds, create new ideas, or explore the unfamiliar.</p>
+        <br />
+        <p>In the midst of personal and global scale upheaval, the exhibition <em>The Nexus of Here</em> offers space and perspective to recalibrate shifting horizons.</p>
+        <br />
+        <p><strong>Opening Reception:</strong> November 12, 5:00 - 8:00 pm<p/>
+        <br />
+        <p><strong>Gallery Hours:</strong> Saturdays & Sundays, 11:00 am - 4:00 pm<p />
+        <br />
+        For appointments outside our regular hours don't hesitate to get in touch with <a href="mailto:hello@wavecontemporary.com">hello@wavecontemporary.com</a></p>
+        <br />
+        <p>This show is proudly supported by a Regional Arts & Culture Council Make | Learn | Build Grant. Additional support is provided by: WAVE Contemporary, SATOR Projects, Prosper Portland, and IPM.</p>
+      `,
+      image: require("./../img/news/nexus-of-here.jpg"),
+    },
+    {
+      id: 2,
+      date: 'November 2022',
+      headline: "Through Line, Oregon State University Art Department Faculty exhibition",
+      body: `
+        <p>To mark the reopening of historic Fairbanks Hall and its renovated studio and gallery spaces, faculty and alumni of OSU’s art program present "Through Line," a show featuring painting, photography, sculpture, and video art, representing 14 artists.</p>
+        <br />
+        <p>Inspired by the natural landscape surrounding Corvallis, "Willamette Streamflow" is a sculptural interpretation of 90 years of river flow measurements collected by the U.S. Geological Survey in Salem from 1930-2020. Willamette Streamflow was commissioned through Oregon’s Percent for Art in Public Places Program, managed by the Oregon Arts Commission, and joins a robust list of other such pieces on OSU’s campus.</p>
+        <br />
+        <p>The galleries in Fairbanks, prominently situated on the western edge of the MU Quad, will host a wide array of shows by faculty, students, and guest artists throughout the academic year.</p>
+        <br />
+        <p>Join us for a reception, celebrating the art and artists as well as this wonderful renovation. The galleries will stay open until 7:30 p.m. in conjunction with the downtown Corvallis Art Walk.</p>
+      `,
+      image: require("./../img/news/through-line.jpg"),
+      imageCredit: 'Waves in full color No. 1 & No. 2, colored pencil on paper, on view in Through Line at Oregon State University’s Fairbanks Gallery', 
+    },
+    {
+      id: 3,
+      date: 'October 2022',
+      headline: "Along these lines, with Julia Bradshaw, Ron Linn, & John Whitten",
+      body: `
+        <p><strong>Well Well Projects in Portland, Oregon</strong></p>
+        <br />
+        <p>Opening Reception Saturday, October 1, 2022 5:00–8:00pm</p>
+        <br />
+        <p>Gallery Talk with Dr. Kirsi Peltomäki, Julia Bradshaw, Ron Linn, & John Whitten Saturday, October 1 at 4:15pm</p>
+        <br />
+        <p>Visitor Information: drop in Saturdays - Sundays, 12-5pm, and by appointment</p>
+        <br />
+        <p><i>Along these lines</i> is an exhibition of recent works by Julia Bradshaw, Ron Linn, and John Whitten. With landscape as their primary subject matter, these artists use time-intensive techniques in photography, painting, and drawing to explore the ambiguous authority of the grid when used to map spaces. These artists challenge the sociopolitical/historical gridded division of the landscape, employ the grid in scientific myth-making, and play with the breakdown of the pixelated pictorial space.</p>
+      `,
+      image: require("./../img/news/along-these-lines.jpg"),
+      imageCredit: 'Along these lines, installation view at Well Well Projects in Portland, Oregon, image credit: Mario Gallucci', 
+    },
+    {
+    id: 4,
+    date: 'April 2022',
+    headline: "To dog a portal",
+    body: `
+      <p><strong>Well Well Projects in Portland, Oregon</strong></p>
+      <br />
+      <p>Through pattern, pixelation, and repetition in action or motif, artists in To dog a portal observe the natural world through scientific data, human interaction, and magical thinking. Emboldened by the possibility of science and magic coexisting, this exhibition engages in a willful suspension of disbelief. Balancing these works on the horizon of time through careful precision in the making process, these artists cultivate a field for observing the super-natural qualities in seemingly everyday occurrences.</p>
+      <br />
+      <p>featuring works by: </p>
+      <p>Andrea Alonge, Ben Buswell, Erik Geschke, Jeremy Le Grand, Morgan Rosskopf, Katherine Spinella, Jessie Rose Vala, Jessie Weitzel Le Grand, & John Whitten</p>
+      <br />
+      <p>April 2 – May 1, 2022</p>
+    `,
+    image: require("./../img/news/dog-a-portal.jpg"),
+    imageCredit: 'To dog a portal, installation view at Well Well Projects in Portland, Oregon, image credit: Mario Gallucci', 
+  },
+  {
+    id: 5,
+    date: 'February 2022',
+    headline: "A Provocation",
+    body: `
+      <p><strong>after/time in Portland, Oregon</strong></p>
+      <br />
+      <p>after/time is excited to announce our first exhibition in 2022 with the Portland-based collective, WAVE Contemporary! A Provocation opens Friday, February 4th and will run through March 3rd, 2022.</p>
+      <br />
+      <p>Please join us for the opening reception on Friday, February 4th 5-8pm PST.</p>
+      <br />
+      <p>WAVE Contemporary :</p>
+      <p>Claire Elliott</p>
+      <p>Marcelo Fontana</p>
+      <p>Asa Mease</p>
+      <p>Midgray</p>
+      <p>Nicholas Moler-Gallardo</p>
+      <p>Hannah Newman</p>
+      <p>Katherine Spinella + John Whitten</p>
+      <p>Kelda Van Patten</p>
+      <p>Rachael Zur</p>
+      <br />
+      <p>A wave occurs when a body of water is disrupted. Small disruptions can grow exponentially outward, affecting powerful change on a large area. WAVE Contemporary borrows its name from this phenomenon, seeking to enact small, but effective, change on the art community in Portland.</p>
+      <br />
+      <p>In Wave – A Provocation, WAVE Contemporary members present gestures of incitement, large and small. These provocations are situated, not within each individual’s practice, but within the practice or ethos of WAVE as a whole. As a dedicated collective, new gestures grow from our collaborative discussions. The process of critique becomes a focal point, and the work from each member highlights this process across various mediums. Just as art is a provocation, critique is also a provocative act, challenging the artist to reach beyond their normal habits, concepts, and thought-patterns. Through critique, WAVE artists seek to both provoke and be provoked, a reciprocity of expansion.</p>
+      <br />
+      <p>Transgression is always an integral part of artmaking. Wave – A Provocation proposes community as a catalyst for provocation, asking how communities challenge, support and transgress together. Each artist will present a piece that highlights the collaborative efforts of WAVE, an individual work shaped or influenced by critique and conversation within the larger collective. Within Wave – A Provocation, we invite viewers into the critique process and a community of provocation.</p>
+    `,
+    image: require("./../img/news/provocation.jpg"),
+    imageCredit: 'Little Pigeon, collaboration with Katherine Spinella, on view in A Provocation at After/Time Collective in Portland, Oregon', 
+  },
+  {
+    id: 6,
+    date: 'December 2021',
+    headline: "Atlas",
+    body: `
+      <p><strong>Curated by Marcelo Fontana, Rachael Zur, and Jason Triefenbach</strong></p>
+      <br />
+      <p>Carnation Contemporary, Portland, Oregon</p>
+      <p>December 5 - December 19, 2021</p>
+      <br />
+      <p>The Oregon art community poses unique challenges for artists in the region. Suffering from a lack of space, unstructured market, recent loss of university programs, implicit biases, and lack of institutional support, in addition to the larger challenges of continuing gentrification, real estate speculation and more create a vacuum of leadership to envision new futures for our society. Amidst this ecosystem, artist-run spaces play a fundamental role in cultural production and promotion. Even with the challenges of funding, opportunity, and reach for member-run initiatives, artist-run spaces play an outsized role in Portland’s visual art scene by creating challenging and generative programming. In Atlas, Carnation Contemporary collaborates with other artist-run spaces and initiatives to address the issues listed above.</p>
+      <br />
+      <p>We believe galleries and artist communities with presence as a physical space have a responsibility to take risks and present exhibitions that capture the city's collective imagination. Carnation's gallery will become a place for reflection on how culture is produced. With this in mind and inspired by Didi-Huberman’s show Atlas: How to Carry the World on One's Back?, at Reina Sofia Museum, Spain 2011, Atlas is a collective curatorial construction presenting a mix of sculptures, projections, paintings and photographs. Our focus is to create a presentation of differences, while focusing on the link that binds us together – spaces enduring to collectively create culture. More than a logic of organization, archive, or a mechanism of research, the exhibition will be a process of discovery on how culture is produced here in Oregon, and how to build and harness a city or community’s collective imagination and create connections between seemingly disparate works.</p>
+      <br />
+      <p>As Ana Luisa Almeida stated in the book Wishes and Cities "[from] the perspective of identity as a collective construction...it remains to reflect on the responsibility that lies with each one of us. We all are builders of this imagination and the role of our decisions, our behaviors and values determine our social space, who is our city."</p>
+      <br />
+      <p>Atlas is a collective effort by 1122 Outside, After Time, Ditch Projects, Fuller Rosen, Gallery 114, Gallery Blue, IPRC, Tropical, Small Talk, Wave, Well Well, and Zymoglyphic.</p>
+    `,
+    image: require("./../img/news/atlas.png"),
+  },
+  {
+    id: 7,
+    date: 'September 2021',
+    headline: "Thunderstruck 2.0: black hole sun gets reviewed by Lindsay Costello for OregonArtsWatch",
+    body: `
+      <h4><a href="https://www.orartswatch.org/facing-the-sun-tunnels/">click here to read Lindsay Costello's full review</a></h4>
+    `,
+    image: require("./../img/news/ts2-review.png"),
+    imageCredit: 'Thunderstruck 2.0: black hole sun exhibited in Portland, OR in September 2021.', 
+  },
+  {
+    id: 8,
+    date: 'September 2021',
+    headline: "Thunderstruck 2.0: black hole sun",
+    body: `
+      <p><i>Thunderstruck 2.0: black hole sun</i> is the second in a series of exhibitions inspired by journeys to classic land art sites in the American West. For this exhibition, three artists and one curator traveled to Western Utah to see Nancy Holt’s 1973-76 work Sun Tunnels on the Winter Solstice, shivering and windblown. For the Summer Solstice, the original four returned with three new companions, expanding the collective to seven artists, blasted by sand and sun. The artists participating in Thunderstruck 2.0 bring diverse materials into their work--drawing, painting, photography, dirt, salt, magnetic waves, sound, light, and more--in order to transport viewers and offer an authentic sense of place. At the same time, Thunderstruck 2.0 asks questions of the Sun Tunnels… How does this site frame our perception of light, scale, and emptiness? Who did Holt make this work for? What is the relationship between land art and spectacle?</p>
+      <br />
+      <p>Curated by Dr. Jessi DiTillio, the Thunderstruck Collective is a growing group of artists committed to collaborative engagements with the land arts of the American west through exhibitions and publications.</p>
+      <br />
+      <p>Current participating members are in Las Vegas, Los Angeles, and Portland:</p>
+      <p><strong>Katherine Spinella</strong></p>
+      <p><strong>Michael E. Stephen </strong></p>
+      <p><strong>John Whitten</strong></p>
+      <p><strong>Kristin Hough </strong></p>
+      <p><strong>Morgan Rosskopf </strong></p>
+      <p><strong>Ashlin Aronin</strong></p>
+      <br />
+      <p>Part travelogue and part creative revisionism, the Thunderstruck project conjures new responses, affective, energetic, and communal, to art historical sites designed for isolation, solitary contemplation, and transcendence.</p>
+      <br />
+      <br />
+      <p><strong>Opening Reception:</strong> Saturday, September 11th, 6-9pm<p/>
+      <br />
+      <p><strong>Gallery Hours:</strong> Fri-Sun 12-5pm </br>
+      drop in or by appointment <p />
+    `,
+    image: require("./../img/news/ts2-carnation.jpg"),
+    imageCredit: 'Thunderstruck 2.0: black hole sun image credit by John Whitten', 
+  },
+  ],
+};
+
+export default data;
