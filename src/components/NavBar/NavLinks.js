@@ -38,7 +38,7 @@ const NavLinks = (props) => {
         animate={animateTo}
         transition={{delay: 0.10}}
         onClick={() => props.isMobile && props.closeMobileMenu()}>
-          <Link to="/about" activestyle>
+          <Link to="/info" activestyle>
           <TiInfoOutline 
             color="#555555" size='28px' style={{padding: '0%'}}
             />
@@ -49,7 +49,7 @@ const NavLinks = (props) => {
         animate={animateTo}
         transition={{delay: 0.15}}
         onClick={() => props.isMobile && props.closeMobileMenu()}>
-          <Link to="/news" activestyle>
+          <Link to="/highlights" activestyle>
           <BiHighlight 
             className={classes.CustomIcon}
             size="28px" 

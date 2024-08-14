@@ -22,12 +22,12 @@ return (
     <Routes>
         <Route exact path="/" element={<LandingPage/>} />
         <Route path="/home" element={<Home/>} />
-        <Route path='/about' element={<About/>} />
+        <Route path='/info' element={<About/>} />
         <Route path='/drawings' element={<Drawing/>} />
         <Route path='/digital' element={<Digital/>} />
         <Route path='/collaborations' element={<Collaborations/>} />
         <Route path='/archive' element={<Archive/>} />
-        <Route path='/news' element={<News/>} />
+        <Route path='/highlights' element={<News/>} />
     </Routes>
     </Router>
     {/* <Footer /> */}
