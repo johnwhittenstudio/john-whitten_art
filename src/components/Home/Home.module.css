@@ -14,7 +14,7 @@
   background-size: cover;
   overflow: hidden;
   padding-bottom: 20px;
-  overflow-y: auto;
+  /* overflow-y: auto; */
 }
 
 /* Header */
@@ -53,9 +53,10 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
-  width: 90%;
+  width: 80%;
+  max-width: 1200px;
   margin: 20px auto;
-  flex-grow: 1;
+  /* flex-grow: 1; */
 }
 
 /* Home Items */
@@ -64,7 +65,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 800px;
+  height: 650px;
   overflow: hidden;
 }
 
@@ -128,7 +129,7 @@
 .ImageTextBelow {
   display: none;
   color: #00121a;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-family: 'Arial', sans-serif;
   text-align: center;
   margin-top: 10px;
