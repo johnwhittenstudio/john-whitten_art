@@ -40,13 +40,14 @@
 .NewsImage {
   width: 100%;
   height: auto;
-  margin-bottom: 20px;
+  /* margin-bottom: 10px; */
 }
 
 .ImageCredit {
   font-size: .6rem;
   color: #8c8b8b;
-  margin-bottom: 50px;
+  margin-top: 5px;
+  margin-bottom: 40px;
 }
 
 .Divider {

@@ -1,7 +1,7 @@
 .LandingPage {
   margin: 0;
   height: 100vh;
-  background: url(../img/Salt_01.gif) no-repeat center center fixed;
+  background: url(../img/SALT_01_w.gif) no-repeat center center fixed;
   background-size: cover;
   z-index: 1;
 }
@@ -38,7 +38,7 @@
 }
 
 .LandingPage main {
-  height: calc(100% - 95px);
+  height: calc(100% - 125px);
   display: flex;
   align-items: center;
   justify-content: center;
