@@ -1,0 +1,243 @@
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.DigitalsIndexContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Layout for Digital Info and Image */
+.DigitalAndTextContainer {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 0;
+  height: 85vh;
+}
+
+.DigitalsIndex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 25%;
+}
+
+.DigitalInfo {
+  margin-bottom: 15px;
+}
+
+.DigitalInfo h4, .DigitalInfo p {
+  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+  margin-bottom: 5px;
+  font-size: .85rem;
+  font-weight: 500;
+  color: #555555;
+}
+
+.DigitalInfo h4 {
+  font-weight: 600;
+  font-size: .8rem;
+}
+
+/* General Image Styles */
+.Digital {
+  max-width: 100%;
+  max-height: 100vh; /* Container never exceeds the viewport height */
+  overflow: hidden; /* Ensure no content exceeds the container */
+}
+
+.Digital .img-container {
+  height: 95%;
+}
+
+.Digital img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 20px 0 0 20px;
+  /* margin-bottom: 10px; */
+  object-fit: contain;
+  display: block;
+  transition: transform 0.3s ease, cursor 0.3s ease; /* Add transition to cursor as well */
+  transform-origin: center; /* Zoom in towards the center of the image */
+  /* cursor: zoom-in; */
+}
+
+/* Apply zoomed state */
+.img-container.zoomed {
+  overflow: scroll; /* Enable scroll when zoomed */
+  cursor: zoom-out; /* Change cursor to zoom out */
+}
+
+/* Apply zoomed state */
+.Digital img.zoomed {
+  transform: scale(2.5); /* Adjust the scale to the desired zoom level */
+  cursor: zoom-out;
+}
+
+/* Explicitly set cursor to zoom-in on hover for non-zoomed image */
+.Digital img:not(.zoomed):hover {
+  cursor: zoom-in;
+}
+
+/* Explicitly set cursor to zoom-out on hover for zoomed image */
+.Digital img.zoomed:hover {
+  cursor: zoom-out;
+}
+
+.PaginationContainer {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.pagination li {
+  display: inline-block;
+  margin-right: 5px;
+  list-style: none;
+}
+
+.pagination li a {
+  text-decoration: none;
+  color: #555555;
+  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+.pagination li.active a {
+  color: #0022a3;
+  font-weight: 800;
+}
+
+  /* Styling Previous Label */
+  .pagination li:first-child a {
+    margin-right: 5px;
+  }
+
+  .pagination li:first-child a:hover {
+    color: #0022a3;
+  }
+
+  /* Styling Next Label */
+  .pagination li:last-child a {
+    margin-left: 5px;
+  }
+
+  .pagination li:last-child a:hover {
+    color: #0022a3;
+  }
+
+
+/* Responsive Layout for Tablet and Mobile */
+@media (max-width: 1024px) {
+  .DigitalAndTextContainer {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .DigitalsIndex {
+    width: 100%;
+    order: 2;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .Digital img {
+    width: 100%;
+    margin: 0;
+    order: 1;
+  }
+
+  .PaginationContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /* Styling Previous Label */
+  .pagination li:first-child a {
+    margin-right: 50px;
+    font-size: 1rem;
+  }
+
+  /* Styling Next Label */
+  .pagination li:last-child a {
+    margin-left: 50px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .DigitalAndTextContainer {
+    margin: 60px 0;
+  }
+
+  .Digital img {
+    order: 1;
+  }
+
+  .PaginationContainer  {
+    font-size: 0.8rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+  
+  .DigitalsIndexContainer header {
+    margin-left: 65px;
+  }
+
+  .DigitalAndTextContainer {
+    width: 100%;
+    padding: 10px;
+    margin-top: 80px;
+  }
+
+  .Digital img {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .DigitalInfo {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .PaginationContainer {
+    margin-top: 30px;
+  }
+
+  /* Styling Previous Label */
+  .pagination li:first-child a {
+    margin-right: 50px;
+    font-size: 1rem;
+  }
+
+  /* Styling Next Label */
+  .pagination li:last-child a {
+    margin-left: 50px;
+    font-size: 1rem;
+  }
+}

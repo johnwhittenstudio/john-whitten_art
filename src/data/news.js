@@ -1,7 +1,22 @@
 const data = {
   news: [
     {
-      id: 1,
+      id: 3,
+      date: 'December 2023',
+      headline: "Companions: Well Well Projects Exchange",
+      body: `
+        <p>In a cross-city pollination, The Vestibule hosts eight artists from the collective, Well-Well Projects while six Vestibule artists travel to Portland to install an exhibition in their gallery for the month of November.</p>
+        <br />
+        <p><strong><a href="https://thevestibule.org/">The Vestibule</a></strong> is an artist-forward exhibition space in the Ballard neighborhood of Seattle.</p>
+        <br />
+        <p>In Seattle, Well Well presents the exhibition, Companions, guest curated by Alyson Provax. For Vestibule Artists in Portland see <a href="https://www.wellwellprojects.com/seeding">SEEDING</a>.</p>
+        <br />
+        <p>This exhibition displays the work of 8 of the 14 artists of Well Well Projects, a member-run gallery in Portland: John Whitten, Kelda Van Patten, Jessie Rose Vala, Katherine Spinella, Morgan Rosskopf, Alyson Provax , Jeremy Le Grand and Erik Geschke. This group of artists works in a wide variety of mediums: Geschke in sculpture, Le Grand in painting, Provax in printmaking, Rosskopf in mixed media paper cutting, Spinella in mixed media collage, Vala in ceramics, Van Patten in photography, and Whitten in graphite drawing. The show operates as a forest: work supporting work to create an environment of unique species that have come together in ways both interdependent and at-odds.</p>
+      `,
+      image: require("./../img/news/vestibule.jpg"),
+    },
+    {
+      id: 4,
       date: 'November 2022 - January 2023',
       headline: "The Nexus of Here",
       body: `
@@ -30,7 +45,7 @@ const data = {
       image: require("./../img/news/nexus-of-here.jpg"),
     },
     {
-      id: 2,
+      id: 5,
       date: 'November 2022',
       headline: "Through Line, Oregon State University Art Department Faculty exhibition",
       body: `
@@ -46,7 +61,7 @@ const data = {
       imageCredit: 'Waves in full color No. 1 & No. 2, colored pencil on paper, on view in Through Line at Oregon State University’s Fairbanks Gallery', 
     },
     {
-      id: 3,
+      id: 6,
       date: 'October 2022',
       headline: "Along these lines, with Julia Bradshaw, Ron Linn, & John Whitten",
       body: `
@@ -64,7 +79,7 @@ const data = {
       imageCredit: 'Along these lines, installation view at Well Well Projects in Portland, Oregon, image credit: Mario Gallucci', 
     },
     {
-    id: 4,
+    id: 7,
     date: 'April 2022',
     headline: "To dog a portal",
     body: `
@@ -81,7 +96,7 @@ const data = {
     imageCredit: 'To dog a portal, installation view at Well Well Projects in Portland, Oregon, image credit: Mario Gallucci', 
   },
   {
-    id: 5,
+    id: 8,
     date: 'February 2022',
     headline: "A Provocation",
     body: `
@@ -112,7 +127,7 @@ const data = {
     imageCredit: 'Little Pigeon, collaboration with Katherine Spinella, on view in A Provocation at After/Time Collective in Portland, Oregon', 
   },
   {
-    id: 6,
+    id: 9,
     date: 'December 2021',
     headline: "Atlas",
     body: `
@@ -132,7 +147,7 @@ const data = {
     image: require("./../img/news/atlas.png"),
   },
   {
-    id: 7,
+    id: 10,
     date: 'September 2021',
     headline: "Thunderstruck 2.0: black hole sun gets reviewed by Lindsay Costello for OregonArtsWatch",
     body: `
@@ -142,7 +157,7 @@ const data = {
     imageCredit: 'Thunderstruck 2.0: black hole sun exhibited in Portland, OR in September 2021.', 
   },
   {
-    id: 8,
+    id: 11,
     date: 'September 2021',
     headline: "Thunderstruck 2.0: black hole sun",
     body: `
@@ -168,6 +183,18 @@ const data = {
     `,
     image: require("./../img/news/ts2-carnation.jpg"),
     imageCredit: 'Thunderstruck 2.0: black hole sun image credit by John Whitten', 
+  },
+  {
+    id: 12,
+    date: 'August 2020',
+    headline: "Cultivating Artist Communities and Networks",
+    body: `
+      <p>As an alum of University of Oregon’s MFA program and co-founder of Carnation Contemporary, I was interviewed for the University of Oregon’s School of Art + Design web page to discuss some reasons why Carnation was created.<p />
+      </br>
+      <p><h4><a href="https://artdesign.uoregon.edu/cultivating-artist-communities-and-networks">click here to read the full article</a></h4>
+      </p>
+    `,
+    image: require("./../img/news/uo-artist-comm.jpg"),
   },
   ],
 };

@@ -42,9 +42,10 @@ function DrawingsIndex() {
       };
     }, []);
 
-  const handlePageClick = ({ selected }) => {
-    setCurrentPage(selected);
-  };
+    const handlePageClick = ({ selected }) => {
+      setCurrentPage(selected);
+      setIsZoomed(false); 
+    };
 
   const toggleZoom = () => {
     setIsZoomed(!isZoomed);

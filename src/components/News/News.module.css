@@ -81,6 +81,10 @@
 
 /* -------------------- mobile -------------------- */
 @media (max-width: 500px) {
+  .NewsContent {
+    width: 90%;
+  }
+  
   .NewsItem {
     width: 95%;
   }
