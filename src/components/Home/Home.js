@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import image01 from './../img/06.jpg';
-import image02 from './../img/00.png';
-import image03 from './../img/01.jpg';
-import image04 from './../img/09.jpg';
+import image01 from './../img/clouds.jpg';
+import image02 from './../img/pigeon.png';
+import image03 from './../img/salt_01.jpg';
+import image04 from './../img/waves_b.jpg';
 import NavBar from "../NavBar/NavBar";
 import classes from './Home.module.css';
 

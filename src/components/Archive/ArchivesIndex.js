@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useCallback } from "react";
 import NavBar from "../NavBar/NavBar";
 import ReactPaginate from 'react-paginate';
-import classes from "./Drawings.module.css";
-import data from "../../data/drawings.js";
+import classes from "./Archives.module.css";
+import data from "../../data/archives.js";
 import { paginate } from "../../utils/paginate";
 
-function DrawingsIndex() {
+function ArchivesIndex() {
   const [currentPage, setCurrentPage] = useState(0);
   const pageSize = 1;
   const [isZoomed, setIsZoomed] = useState(false); // State for zoom
@@ -23,45 +23,44 @@ function DrawingsIndex() {
   const [pageCountState, setPageCountState] = useState(0);
 
   useEffect(() => {
-    const { paginatedData, pageCount } = getPaginatedData(data.drawings, pageSize, currentPage);
+    const { paginatedData, pageCount } = getPaginatedData(data.archives, pageSize, currentPage);
     setPaginatedDataState(paginatedData);
     setPageCountState(pageCount);
   }, [getPaginatedData, pageSize, currentPage]);
 
-    // Disable Right-Click Context Menu
-    useEffect(() => {
-      const disableContextMenu = (e) => {
-        e.preventDefault();
-      };
-      
-      document.addEventListener('contextmenu', disableContextMenu);
-  
-      // Cleanup event listener on component unmount
-      return () => {
-        document.removeEventListener('contextmenu', disableContextMenu);
-      };
-    }, []);
-
-    const handlePageClick = ({ selected }) => {
-      setCurrentPage(selected);
-      setIsZoomed(false); 
+  // Disable Right-Click Context Menu
+  useEffect(() => {
+    const disableContextMenu = (e) => {
+      e.preventDefault();
     };
+    
+    document.addEventListener('contextmenu', disableContextMenu);
+
+    return () => {
+      document.removeEventListener('contextmenu', disableContextMenu);
+    };
+  }, []);
+
+  const handlePageClick = ({ selected }) => {
+    setCurrentPage(selected);
+    setIsZoomed(false);
+  };
 
   const toggleZoom = () => {
     setIsZoomed(!isZoomed);
   };
 
   return (
-    <div className={classes.DrawingsIndexContainer}>
+    <div className={classes.ArchivesIndexContainer}>
       <NavBar />
-      <div className={classes.DrawingAndTextContainer}>
-        <div className={classes.DrawingsIndex}>
-          {paginatedDataState.map((drawing, index) => (
-            <div key={index} className={classes.DrawingInfo}>
-              <h4>{drawing?.title}</h4>
-              <p>{drawing?.description}</p>
-              <p>{drawing?.size}</p>
-              {/* <p>{drawing?.year}</p> */}
+      <div className={classes.ArchiveAndTextContainer}>
+        <div className={classes.ArchivesIndex}>
+          {paginatedDataState.map((archive, index) => (
+            <div key={index} className={classes.ArchiveInfo}>
+              <h4>{archive?.title}</h4>
+              <p>{archive?.description}</p>
+              <p>{archive?.size}</p>
+              <p>{archive?.year}</p>
               <br />
               <p>(click image to zoom)</p>
             </div>
@@ -81,7 +80,7 @@ function DrawingsIndex() {
             />
           </div>
         </div>
-        <div className={`${classes.Drawing} ${isZoomed ? classes.zoomed : ''}`}>
+        <div className={`${classes.Archive} ${isZoomed ? classes.zoomed : ''}`}>
           <div 
             className={`${classes["img-container"]} ${isZoomed ? classes.zoomed : ''}`}
             onClick={toggleZoom}
@@ -99,4 +98,4 @@ function DrawingsIndex() {
   );
 }
 
-export default DrawingsIndex;
+export default ArchivesIndex;
