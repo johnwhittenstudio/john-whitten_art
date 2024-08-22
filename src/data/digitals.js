@@ -9,7 +9,7 @@ const data = {
         image: require("./../img/digital/Salt_01.gif"),
       },
       {
-        id: 1,
+        id: 2,
         title: 'Title 01',
         description: "Description 01",
         size: "Size 01",
@@ -17,7 +17,7 @@ const data = {
         image: require("./../img/digital/Salt_02.gif"),
       },
       {
-        id: 1,
+        id: 3,
         title: 'Title 01',
         description: "Description 01",
         size: "Size 01",
@@ -25,7 +25,7 @@ const data = {
         image: require("./../img/digital/Salt_03.gif"),
       },
       {
-        id: 1,
+        id: 4,
         title: 'Title 01',
         description: "Description 01",
         size: "Size 01",
@@ -33,7 +33,7 @@ const data = {
         image: require("./../img/digital/Salt_04.gif"),
       },
       {
-        id: 1,
+        id: 5,
         title: 'Title 01',
         description: "Description 01",
         size: "Size 01",
@@ -41,7 +41,7 @@ const data = {
         image: require("./../img/digital/Salt_05.gif"),
       },
       {
-        id: 1,
+        id: 6,
         title: 'Title 01',
         description: "Description 01",
         size: "Size 01",
@@ -49,7 +49,7 @@ const data = {
         image: require("./../img/digital/TotalEclipse.jpg"),
       },
       {
-        id: 2,
+        id: 7,
         title: 'Title 02',
         description: "Description 02",
         size: "Size 02",
@@ -57,7 +57,7 @@ const data = {
         image: require("./../img/digital/WildfireMoon.jpg"),
       },
       {
-        id: 3,
+        id: 8,
         title: 'View from my back yard (Wildfire Sun, 5:36pm PST Sept.9, 2020)',
         description: "Archival print on photo matte paper",
         size: "32 x 40 inches",
