@@ -31,7 +31,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 25%;
+    width: 30%;
   }
   
   .ArchiveInfo {
@@ -128,7 +128,7 @@
   
     /* Styling Previous Label */
     .pagination li:first-child a {
-      margin-right: 5px;
+      margin-right: 15px;
     }
   
     .pagination li:first-child a:hover {
@@ -137,7 +137,7 @@
   
     /* Styling Next Label */
     .pagination li:last-child a {
-      margin-left: 5px;
+      margin-left: 15px;
     }
   
     .pagination li:last-child a:hover {
@@ -172,17 +172,19 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
+      width: 100px;
     }
   
     /* Styling Previous Label */
     .pagination li:first-child a {
-      margin-right: 50px;
+      margin-right: 40px;
       font-size: 1rem;
+      left: 0;
     }
   
     /* Styling Next Label */
     .pagination li:last-child a {
-      margin-left: 50px;
+      margin-left: 40px;
       font-size: 1rem;
     }
   }
@@ -212,7 +214,7 @@
     .ArchiveAndTextContainer {
       width: 100%;
       padding: 10px;
-      margin-top: 80px;
+      margin-top: 10px;
     }
   
     .Archive img {

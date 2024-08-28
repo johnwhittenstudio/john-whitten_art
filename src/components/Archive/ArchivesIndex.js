@@ -29,17 +29,17 @@ function ArchivesIndex() {
   }, [getPaginatedData, pageSize, currentPage]);
 
   // Disable Right-Click Context Menu
-  useEffect(() => {
-    const disableContextMenu = (e) => {
-      e.preventDefault();
-    };
+  // useEffect(() => {
+  //   const disableContextMenu = (e) => {
+  //     e.preventDefault();
+  //   };
     
-    document.addEventListener('contextmenu', disableContextMenu);
+  //   document.addEventListener('contextmenu', disableContextMenu);
 
-    return () => {
-      document.removeEventListener('contextmenu', disableContextMenu);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener('contextmenu', disableContextMenu);
+  //   };
+  // }, []);
 
   const handlePageClick = ({ selected }) => {
     setCurrentPage(selected);
@@ -60,17 +60,18 @@ function ArchivesIndex() {
               <h4>{archive?.title}</h4>
               <p>{archive?.description}</p>
               <p>{archive?.size}</p>
-              <p>{archive?.year}</p>
+              {/* <p>{archive?.year}</p> */}
               <br />
               <p>(click image to zoom)</p>
             </div>
           ))}
           <div className={classes.PaginationContainer}>
             <ReactPaginate
+              breakLabel="..."
               pageCount={pageCountState}
               onPageChange={handlePageClick}
               forcePage={currentPage}
-              marginPagesDisplayed={10}
+              marginPagesDisplayed={2}
               pageRangeDisplayed={2}
               previousLabel={"<"}
               nextLabel={">"}

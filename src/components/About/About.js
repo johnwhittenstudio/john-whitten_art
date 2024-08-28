@@ -14,7 +14,7 @@ const About = () => {
       <div className={classes.About} id="about">
         <img className={classes.Bio} src={bio} alt="me" />
         <div className={classes.Text}>
-          <p><b>John Whitten</b> is a visual artist, educator, web developer, community organizer, and aspiring mandolinist based in Portland, OR. His work has been exhibited nationally and internationally, earning him numerous residencies, grants, and awards.
+          <p><b>John Whitten</b> is a visual artist, educator, web developer, community organizer, and aspiring mandolinist based in Portland, Oregon. His work has been exhibited nationally and internationally, earning him numerous residencies, grants, and awards.
           <br />
           <br />
           John currently serves as director of <a href="https://www.wellwellprojects.com" target="_blank" rel="noopener noreferrer">Well Well Projects</a>, an artist-collective gallery he co-founded in 2021. In 2018, he co-founded <a href="https://www.carnationcontemporary.com" target="_blank" rel="noopener noreferrer">Carnation Contemporary</a>, another artist-collective gallery, and <a href="https://www.thunderstruckcollective.com" target="_blank" rel="noopener noreferrer">Thunderstruck</a>, a nomadic artist residency and exhibition project.</p>
