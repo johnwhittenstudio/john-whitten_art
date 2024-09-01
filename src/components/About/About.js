@@ -21,19 +21,19 @@ const About = () => {
         </div>
         <div className={classes.AboutIcons}>
           <div className={classes.AboutIcon} onClick={handleURL('mailto:johnwhitten.studio@gmail.com')}>
-            <FiMail color="#555555" size='28px' />
+            <FiMail color="#555555" size='25px' />
           </div>
           <div className={classes.AboutIcon} onClick={handleURL('https://www.instagram.com/john.whitten/?hl=en')}>
-            <FiInstagram color="#555555" size='28px' />
+            <FiInstagram color="#555555" size='25px' />
           </div>
           <div className={classes.AboutIcon} onClick={handleURL('https://github.com/johnwhittenstudio')}>
-            <FiGithub color="#555555" size='28px' />
+            <FiGithub color="#555555" size='25px' />
           </div>
           <div className={classes.AboutIcon} onClick={handleURL('https://www.linkedin.com/in/johnwhittenstudio/')}>
-            <FiLinkedin color="#555555" size='28px' />
+            <FiLinkedin color="#555555" size='25px' />
           </div>
           <div className={classes.AboutIcon} onClick={handleURL('https://www.youtube.com/channel/UC-V6tMaHcYExkqCy-NWzTxQ/featured')}>
-            <FiYoutube color="#555555" size='28px' />
+            <FiYoutube color="#555555" size='25px' />
           </div>
         </div>
       </div>

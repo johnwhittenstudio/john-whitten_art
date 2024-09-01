@@ -97,14 +97,17 @@
   }
   
   .PaginationContainer {
-    width: 100%;
+    position: relative;
+    width: 300px;
     margin-bottom: 20px;
   }
   
   .pagination {
     display: flex;
-    justify-content: flex-start;
+    justify-content: left;
+    position: relative;
     cursor: pointer;
+    padding: 0 40px;
   }
   
   .pagination li {
@@ -126,23 +129,24 @@
     font-weight: 800;
   }
   
-    /* Styling Previous Label */
-    .pagination li:first-child a {
-      margin-right: 15px;
-    }
-  
-    .pagination li:first-child a:hover {
-      color: #0022a3;
-    }
-  
-    /* Styling Next Label */
-    .pagination li:last-child a {
-      margin-left: 15px;
-    }
-  
-    .pagination li:last-child a:hover {
-      color: #0022a3;
-    }
+
+/* Positioning for Previous and Next buttons */
+.pagination li:first-child {
+  position: absolute;
+  left: 0; /* Align to the left edge */
+}
+
+.pagination li:last-child {
+  position: absolute;
+  right: 0; /* Align to the right edge */
+  margin: 0 50px;
+}
+
+/* Hover styles */
+.pagination li:first-child a:hover, 
+.pagination li:last-child a:hover {
+  color: #0022a3;
+}
   
   
   /* Responsive Layout for Tablet and Mobile */
@@ -175,6 +179,11 @@
       width: 100px;
     }
   
+    
+    .pagination li:last-child {
+      margin-right: 0px;
+    }
+
     /* Styling Previous Label */
     .pagination li:first-child a {
       margin-right: 40px;

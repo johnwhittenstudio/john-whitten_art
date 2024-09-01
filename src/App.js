@@ -7,7 +7,7 @@ import Home from './../src/components/Home/Home';
 import About from './../src/components/About/About';
 import Drawing from './components/Drawing/DrawingGallery';
 import Digital from './components/Digital/DigitalGallery';
-import Collaborations from './components/Collaborations/CollaborationsGallery';
+import Collaboration from './components/Collaboration/CollaborationGallery';
 import Archive from './components/Archive/ArchiveGallery';
 import News from './components/News/News';
 import React from 'react';
@@ -25,7 +25,7 @@ return (
         <Route path='/info' element={<About/>} />
         <Route path='/drawings' element={<Drawing/>} />
         <Route path='/digital' element={<Digital/>} />
-        <Route path='/collaborations' element={<Collaborations/>} />
+        <Route path='/collaboration' element={<Collaboration/>} />
         <Route path='/archive' element={<Archive/>} />
         <Route path='/highlights' element={<News/>} />
     </Routes>

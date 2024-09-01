@@ -50,14 +50,14 @@ const data = {
         },
         {
           id: 7,
-          title: 'Mass in blue and orange',
+          title: 'Mass in Blue and Orange',
           description: "colored pencil and graphite pencil on paper",
           size: "22 x 22 inches",
           year: "Year 01",
           image: require("./../img/archive/mass_blue-orange.jpg"),
         },        {
           id: 8,
-          title: 'Mass in green',
+          title: 'Mass in Green',
           description: "colored pencil and graphite pencil on paper",
           size: "18 x 18 inches",
           year: "Year 01",
@@ -65,7 +65,7 @@ const data = {
         },
         {
           id: 9,
-          title: 'Waves in full color No. 1',
+          title: 'Waves in Full Color No. 1',
           description: "colored pencil on paper",
           size: "11 x 14 inches",
           year: "Year 01",
@@ -73,7 +73,7 @@ const data = {
         },
         {
           id: 10,
-          title: 'Waves in full color No. 2',
+          title: 'Waves in Full Color No. 2',
           description: "colored pencil on paper",
           size: "14 x 17 inches",
           year: "Year 01",
@@ -81,7 +81,7 @@ const data = {
         },
         {
           id: 11,
-          title: 'Waves in full color No. 3',
+          title: 'Waves in Full Color No. 3',
           description: "colored pencil on paper",
           size: "16 x 20 inches",
           year: "Year 01",
@@ -89,7 +89,7 @@ const data = {
         },
         {
           id: 12,
-          title: 'Mass in full color No. 1',
+          title: 'Mass in Full Color No. 1',
           description: "colored pencil on paper",
           size: "11 x 14 inches",
           year: "Year 01",
@@ -97,7 +97,7 @@ const data = {
         },
         {
           id: 13,
-          title: 'Mass in full color No. 2',
+          title: 'Mass in Full Color No. 2',
           description: "colored pencil on paper",
           size: "14 x 17 inches",
           year: "Year 01",
@@ -105,7 +105,7 @@ const data = {
         },
         {
           id: 14,
-          title: 'Mass in full color No. 3',
+          title: 'Mass in Full Color No. 3',
           description: "colored pencil on paper",
           size: "22 x 30 inches",
           year: "Year 01",
@@ -113,7 +113,7 @@ const data = {
         },
         {
           id: 15,
-          title: 'Mass in black and yellow',
+          title: 'Mass in Black and Yellow',
           description: "colored pencil and graphite pencil on paper",
           size: "18 x 18 inches",
           year: "Year 01",
@@ -121,7 +121,7 @@ const data = {
         },
         {
           id: 16,
-          title: 'Mass in white',
+          title: 'Mass in White',
           description: "graphite pencil on paper",
           size: "14 x 17 inches",
           year: "Year 01",
@@ -129,7 +129,7 @@ const data = {
         },
         {
           id: 17,
-          title: 'Mass in black',
+          title: 'Mass in Black',
           description: "graphite powder on paper",
           size: "14 x 17 inches",
           year: "Year 01",
@@ -137,7 +137,7 @@ const data = {
         },
         {
           id: 18,
-          title: 'Mass in black and white No. 1',
+          title: 'Mass in Black and White No. 1',
           description: "graphite pencil on paper",
           size: "14 x 17 inches",
           year: "Year 01",
@@ -145,7 +145,7 @@ const data = {
         },
         {
           id: 19,
-          title: 'Mass in black and white No. 2',
+          title: 'Mass in Black and White No. 2',
           description: "graphite pencil on paper",
           size: "19 x 24 inches",
           year: "Year 01",
@@ -153,7 +153,7 @@ const data = {
         },
         {
           id: 20,
-          title: 'Waves in black and white No. 1',
+          title: 'Waves in Black and White No. 1',
           description: "graphite pencil on paper",
           size: "11 x 14 inches",
           year: "Year 01",
@@ -161,7 +161,7 @@ const data = {
         },
         {
           id: 21,
-          title: 'Waves in black and white No. 2',
+          title: 'Waves in Black and White No. 2',
           description: "graphite pencil on paper",
           size: "14 x 17 inches",
           year: "Year 01",
@@ -169,7 +169,7 @@ const data = {
         },
         {
           id: 22,
-          title: 'Waves in black and white No. 3',
+          title: 'Waves in Black and White No. 3',
           description: "graphite pencil on paper",
           size: "11 x 14 inches",
           year: "Year 01",
@@ -177,7 +177,7 @@ const data = {
         },
         {
           id: 23,
-          title: 'Waves in black and white No. 4',
+          title: 'Waves in Black and White No. 4',
           description: "graphite pencil on paper",
           size: "14 x 17 inches",
           year: "Year 01",
@@ -185,7 +185,7 @@ const data = {
         },
         {
           id: 24,
-          title: 'Waves in black and white No. 5',
+          title: 'Waves in Black and White No. 5',
           description: "graphite pencil on paper",
           size: "11 x 14 inches",
           year: "Year 01",

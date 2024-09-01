@@ -33,6 +33,10 @@
   height: auto; /* Maintain aspect ratio */
 }
 
+.Logo a {
+  cursor: pointer;
+}
+
 /* Navigation Styling */
 .Navigation {
   display: flex;

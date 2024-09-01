@@ -68,11 +68,12 @@ function DrawingsIndex() {
           ))}
           <div className={classes.PaginationContainer}>
             <ReactPaginate
+              breakLabel="..."
               pageCount={pageCountState}
               onPageChange={handlePageClick}
               forcePage={currentPage}
-              marginPagesDisplayed={10}
-              pageRangeDisplayed={2}
+              marginPagesDisplayed={1}
+              pageRangeDisplayed={4}
               previousLabel={"<"}
               nextLabel={">"}
               containerClassName={classes.pagination}

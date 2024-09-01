@@ -73,7 +73,7 @@ body {
   color: #555555;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 1rem;
-  margin: 20px auto;
+  margin: 10px auto;
   width: 80%;
   max-width: 1000px;
   text-align: left; /* Center align text for better fit */
@@ -92,7 +92,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   cursor: pointer;
-  margin: 15px auto;
+  margin: 5px auto;
 }
 
 .About .AboutIcon {

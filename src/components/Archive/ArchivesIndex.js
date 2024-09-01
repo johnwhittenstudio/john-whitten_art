@@ -71,8 +71,8 @@ function ArchivesIndex() {
               pageCount={pageCountState}
               onPageChange={handlePageClick}
               forcePage={currentPage}
-              marginPagesDisplayed={2}
-              pageRangeDisplayed={2}
+              marginPagesDisplayed={1}
+              pageRangeDisplayed={4}
               previousLabel={"<"}
               nextLabel={">"}
               containerClassName={classes.pagination}

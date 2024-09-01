@@ -62,16 +62,17 @@ function DigitalsIndex() {
               <p>{digital?.size}</p>
               <p>{digital?.year}</p>
               <br />
-              <p>(click image to zoom)</p>
+              {/* <p>(click image to zoom)</p> */}
             </div>
           ))}
           <div className={classes.PaginationContainer}>
             <ReactPaginate
+              breakLabel="..."
               pageCount={pageCountState}
               onPageChange={handlePageClick}
               forcePage={currentPage}
-              marginPagesDisplayed={10}
-              pageRangeDisplayed={2}
+              marginPagesDisplayed={1}
+              pageRangeDisplayed={4}
               previousLabel={"<"}
               nextLabel={">"}
               containerClassName={classes.pagination}
