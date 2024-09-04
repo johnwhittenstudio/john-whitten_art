@@ -1,6 +1,6 @@
 import React from "react";
 
-function Collaboration({ image, title, description, size, year, className }) {
+function Collaboration({ image, title, description, size, year, click, className }) {
   return (
     <div>
       <img src={image} alt={title} className={className} />
@@ -8,6 +8,7 @@ function Collaboration({ image, title, description, size, year, className }) {
       <p>{description}</p>
       <p>{size}</p>
       <p>{year}</p>
+      <p>{click}</p>
     </div>
   );
 }

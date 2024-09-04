@@ -69,42 +69,46 @@
     /* margin-bottom: 10px; */
     object-fit: contain;
     display: block;
-    transition: transform 0.3s ease, cursor 0.3s ease; /* Add transition to cursor as well */
-    transform-origin: center; /* Zoom in towards the center of the image */
+    cursor: pointer;
+    /* transition: transform 0.3s ease, cursor 0.3s ease;
+    transform-origin: center;  */
     /* cursor: zoom-in; */
   }
   
   /* Apply zoomed state */
-  .img-container.zoomed {
-    overflow: scroll; /* Enable scroll when zoomed */
-    cursor: zoom-out; /* Change cursor to zoom out */
-  }
+  /* .img-container.zoomed {
+    overflow: scroll; 
+    cursor: zoom-out; 
+  } */
   
-  /* Apply zoomed state */
-  .Collaboration img.zoomed {
-    transform: scale(2.5); /* Adjust the scale to the desired zoom level */
+  /* Apply zoomed state, Adjust the scale to the desired zoom level */
+  /* .Collaboration img.zoomed {
+    transform: scale(2.5); 
     cursor: zoom-out;
-  }
+  } */
   
   /* Explicitly set cursor to zoom-in on hover for non-zoomed image */
-  .Collaboration img:not(.zoomed):hover {
+  /* .Collaboration img:not(.zoomed):hover {
     cursor: zoom-in;
-  }
+  } */
   
   /* Explicitly set cursor to zoom-out on hover for zoomed image */
-  .Collaboration img.zoomed:hover {
+  /* .Collaboration img.zoomed:hover {
     cursor: zoom-out;
-  }
-  
+  } */
+
   .PaginationContainer {
-    width: 100%;
+    position: relative;
+    width: 300px;
     margin-bottom: 20px;
   }
   
   .pagination {
     display: flex;
-    justify-content: flex-start;
+    justify-content: left;
+    position: relative;
     cursor: pointer;
+    padding: 0 40px;
   }
   
   .pagination li {
@@ -126,23 +130,24 @@
     font-weight: 800;
   }
   
-    /* Styling Previous Label */
-    .pagination li:first-child a {
-      margin-right: 5px;
-    }
-  
-    .pagination li:first-child a:hover {
-      color: #0022a3;
-    }
-  
-    /* Styling Next Label */
-    .pagination li:last-child a {
-      margin-left: 5px;
-    }
-  
-    .pagination li:last-child a:hover {
-      color: #0022a3;
-    }
+
+/* Positioning for Previous and Next buttons */
+.pagination li:first-child {
+  position: absolute;
+  left: 0; /* Align to the left edge */
+}
+
+.pagination li:last-child {
+  position: absolute;
+  right: 0; /* Align to the right edge */
+  margin: 0 50px;
+}
+
+/* Hover styles */
+.pagination li:first-child a:hover, 
+.pagination li:last-child a:hover {
+  color: #0022a3;
+}
   
   
   /* Responsive Layout for Tablet and Mobile */
@@ -172,17 +177,22 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
+      width: 100px;
     }
+
+    .pagination li:last-child {
+        margin-right: 0px;
+      }
   
     /* Styling Previous Label */
     .pagination li:first-child a {
-      margin-right: 50px;
+      margin-right: 40px;
       font-size: 1rem;
     }
   
     /* Styling Next Label */
     .pagination li:last-child a {
-      margin-left: 50px;
+      margin-left: 40px;
       font-size: 1rem;
     }
   }

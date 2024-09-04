@@ -31,12 +31,12 @@ const Home = () => {
           </Link>
         </div>
         <div className={classes.HomeItem}>
-          <Link to="/collaborations">
-            <img className={classes.HomeImage} src={image02} alt="collaborations gallery" />
+          <Link to="/collaboration">
+            <img className={classes.HomeImage} src={image02} alt="collaboration gallery" />
             <div className={classes.HomeItemOverlay}>
-              <p className={classes.ImageText}>collaborations</p>
+              <p className={classes.ImageText}>collaboration</p>
             </div>
-            <p className={classes.ImageTextBelow}>collaborations</p>
+            <p className={classes.ImageTextBelow}>collaboration</p>
           </Link>
         </div>
         <div className={classes.HomeItem}>

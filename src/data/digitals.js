@@ -55,6 +55,14 @@ const data = {
         image: require("./../img/digital/WildfireMoon.jpg"),
       },
       {
+        id: 8,
+        title: 'View from my back yard (Total Eclipse, 2:02pm CST Apr. 8, 2024)',
+        description: "archival pigment print on luster",
+        size: "33 x 48 inches",
+        year: "ongoing",
+        image: require("./../img/digital/TotalEclipse-IN.jpg"),
+      },
+      {
         id: 9,
         title: 'Suttle Lake Reflections No. 1',
         description: "archival pigment print on luster",
