@@ -67,14 +67,14 @@ const data = {
         title: 'Suttle Lake Reflections No. 1',
         description: "archival pigment print on luster",
         size: "24 x 16 inches",
-        image: require("./../img/digital/suttle_01.jpg"),
+        image: require("./../img/digital/suttle_02.jpg"),
       },
       {
         id: 10,
         title: 'Suttle Lake Reflections No. 2',
         description: "archival pigment print on luster",
         size: "24 x 16 inches",
-        image: require("./../img/digital/suttle_02.jpg"),
+        image: require("./../img/digital/suttle_01.jpg"),
       },
       {
         id: 11,
