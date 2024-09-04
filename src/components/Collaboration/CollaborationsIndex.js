@@ -76,7 +76,7 @@ function CollaborationsIndex() {
         </div>
         <div className={classes.Collaboration}>
           <div className={classes["img-container"]}>
-            <a href={paginatedDataState[0]?.youtubeLink} target="_blank" rel="noopener noreferrer">
+            <a href={paginatedDataState[0]?.link} target="_blank" rel="noopener noreferrer">
               <img 
                 src={paginatedDataState[0]?.image} 
                 alt={paginatedDataState[0]?.title}

@@ -199,6 +199,10 @@
     margin-bottom: 20px; /* Ensure consistent spacing */
   }
 
+  .HomeImage {
+    border-radius: 25px;
+  }
+
   .ImageTextBelow {
     margin-bottom:10px;
     font-size: 1.25rem;
