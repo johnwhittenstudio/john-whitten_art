@@ -131,7 +131,7 @@
     overflow-x: hidden;
     overflow-y: hidden;
     margin-top: 60px;
-    padding-bottom: 45px;
+    padding-bottom: 155px;
   }
 
   .NavBar nav ul li {
@@ -171,7 +171,7 @@
 
   .NavBar .Social li {
     margin-top: 0;
-    padding: 20px 25px;
+    padding: 10px 25px;
   }
 }
 
