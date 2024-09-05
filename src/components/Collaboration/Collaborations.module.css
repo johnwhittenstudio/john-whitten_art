@@ -164,7 +164,7 @@
       order: 2;
       align-items: center;
       text-align: center;
-      margin-top: 20px;
+      /* margin-top: 20px; */
     }
   
     .Collaboration img {
@@ -222,7 +222,7 @@
     .CollaborationAndTextContainer {
       width: 100%;
       padding: 10px;
-      margin-top: 80px;
+      margin-top: 10px;
     }
   
     .Collaboration img {
