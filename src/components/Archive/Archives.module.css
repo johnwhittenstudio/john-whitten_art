@@ -57,6 +57,7 @@
     max-height: 100vh; /* Container never exceeds the viewport height */
     overflow: hidden; /* Ensure no content exceeds the container */
     margin: 0 auto;
+    padding-right: 25%;
   }
   
   .Archive .img-container {
@@ -167,6 +168,10 @@
       /* margin-top: 20px; */
     }
   
+    .Archive {
+      padding-right: 0;
+    }
+
     .Archive img {
       width: 100%;
       margin: 0;

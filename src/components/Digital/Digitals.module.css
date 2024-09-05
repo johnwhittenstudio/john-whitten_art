@@ -57,7 +57,7 @@ body {
   max-height: 100vh; /* Container never exceeds the viewport height */
   overflow: hidden; /* Ensure no content exceeds the container */
   margin: 0 auto;
-
+  /* padding-right: 15%; */
 }
 
 .Digital .img-container {
@@ -140,6 +140,10 @@ body {
     align-items: center;
     text-align: center;
     margin-top: 10px;
+  }
+
+  .Digital {
+    padding-right: 0;
   }
 
   .Digital img {
