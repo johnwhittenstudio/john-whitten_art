@@ -168,8 +168,7 @@
   }
 
   .ImageTextBelow {
-    display: block;
-    margin-bottom: 10px; /* Adjust margin to ensure consistency */
+    display: block;  
   }
 }
 
@@ -199,12 +198,20 @@
     margin-bottom: 20px; /* Ensure consistent spacing */
   }
 
+  .HomeItem:last-child {
+    margin-bottom: 0; /* Remove extra margin after the last item */
+  }
+
   .HomeImage {
     border-radius: 25px;
   }
 
-  .ImageTextBelow {
-    margin-bottom:10px;
-    font-size: 1.25rem;
+  .HomeItem img {
+    margin-bottom: 0;
   }
+
+  /* .ImageTextBelow {
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+  } */
 }

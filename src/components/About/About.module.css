@@ -113,7 +113,7 @@ body {
 @media (max-width: 900px) {
   .About .Bio {
     width: 90%;
-    margin: 30px auto;
+    margin: 20px auto;
   }
 
   .About .Text p {
