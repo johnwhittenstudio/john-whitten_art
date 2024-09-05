@@ -25,7 +25,7 @@ const Book = () => {
       <NavBar />
       <div className={classes.FlipBookWrapper}>
         <HTMLFlipBook
-          width={isDesktop ? 400 : isTablet ? 600 : isMobile ? 300 : 300}
+          width={isDesktop ? 420 : isTablet ? 600 : isMobile ? 300 : 300}
           height={isDesktop ? 650 : isTablet ? 500 : isMobile ? 500 : 400}
           size="fixed"
           minWidth={300}
