@@ -114,7 +114,7 @@ const data = {
         description: "38 page full-color book, perfect bound, distributed by Printed Matter, Inc.",
         size: "8.5 x 5.5 inches",
         year: "with Michael Stephen, Jessi DiTillio, Katherine Spinella",
-        click: "(click image for flipbook – view on desktop/tablet recommended)",
+        click: "(click image for flipbook – best viewed on desktop)",
         image: require("./../img/collaboration/book.jpg"),
         link: "/collaboration/book",       
       },
