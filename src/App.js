@@ -24,7 +24,7 @@ return (
         <Route exact path="/" element={<LandingPage/>} />
         <Route path="/home" element={<Home/>} />
         <Route path='/info' element={<About/>} />
-        <Route path='/drawings' element={<Drawing/>} />
+        <Route path='/drawing' element={<Drawing/>} />
         <Route path='/digital' element={<Digital/>} />
         <Route path='/collaboration' element={<Collaboration/>} />
         <Route path='/collaboration/book' element={<Book/>} />

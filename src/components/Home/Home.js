@@ -13,12 +13,12 @@ const Home = () => {
       <NavBar />
       <div className={classes.HomeGallery} id="homeGallery">
       <div className={classes.HomeItem}>
-          <Link to="/drawings">
+          <Link to="/drawing">
             <img className={classes.HomeImage} src={image01} alt="drawing gallery" />
             <div className={classes.HomeItemOverlay}>
-              <p className={classes.ImageText}>drawings</p>
+              <p className={classes.ImageText}>drawing</p>
             </div>
-            <p className={classes.ImageTextBelow}>drawings</p>
+            <p className={classes.ImageTextBelow}>drawing</p>
           </Link>
         </div>
         <div className={classes.HomeItem}>
