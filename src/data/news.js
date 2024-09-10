@@ -1,6 +1,15 @@
 const data = {
   news: [
     {
+      id: 1,
+      date: 'September - October 2024',
+      headline: "OSU Art + Design Staff and Faculty Exhibition",
+      body: `
+        <p>I will be showcasing two collaborative works created with Katherine Spinella at Oregon State University in Corvallis, OR. The multimedia pieces, titled <i>Little Pigeon</i> and <i>C-Curve Viewfinder</i>, explore intersections of material, form, and narrative.</p>
+      `,
+      image: require("./../img/news/2024-OSU.jpg"),
+    },
+    {
       id: 3,
       date: 'December 2023',
       headline: "Companions: Well Well Projects Exchange",
