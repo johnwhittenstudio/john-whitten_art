@@ -3,9 +3,27 @@ const data = {
     {
       id: 1,
       date: 'September - October 2024',
+      headline: "drawings: a solo exhibition",
+      body: `
+        <p><b><i>drawings</i></b> is a solo exhibition by John Whitten at <b>NEVER Coffee Lab</b>, 537 SW 12th Ave, Portland, OR 97205</p>
+        </br>
+        <p>The show will run September 15 - October 15, 2024.</p>
+        </br>
+        <p>John Whitten’s drawings focus primarily on landscapes where he has completed a physical or emotional journey. By rendering digital photographs of these places through meticulous drawing techniques, he explores the parallels between the breakdown of digital images into pixels and drawings into individual marks. Using a digital projector, John translates his photographs into hand-drawn graphite and colored pencil marks, guided by the abstraction inherent in pixelated grids and halftone processes.</p>
+        </br>
+        <p>These works emphasize an emotional depth achieved through slowness and process, offering a counterpoint to the fast-paced consumption of digital images. By encouraging moments of meditative reflection, his drawings invite contemplation on themes such as materiality, time, labor, and the creative process. Combining traditional drawing methods with digital tools, John’s work investigates the dynamic relationship between technology, materiality, and the human experience.</p>
+        </br>
+        <p>This exhibition was generously funded in part by an Arts3C grant from the Regional Arts & Culture Council.</p>
+      `,
+      image: require("./../img/drawings/clouds.jpg"),
+      imageCredit: '42.3516° N, 107.4573° W, at 30,000 ft, colored pencil on paper, 22 x 30 inches', 
+    },
+    {
+      id: 2,
+      date: 'September - October 2024',
       headline: "OSU Art + Design Staff and Faculty Exhibition",
       body: `
-        <p>I will be showcasing two collaborative works created with Katherine Spinella at Oregon State University in Corvallis, OR. The multimedia pieces, titled <i>Little Pigeon</i> and <i>C-Curve Viewfinder</i>, explore intersections of material, form, and narrative.</p>
+        <p><i>Little Pigeon</i> and <i>C-Curve Viewfinder</i>, two collaborative works created with Katherine Spinella, will be on display at Oregon State University in Corvallis, OR.</p>
       `,
       image: require("./../img/news/2024-OSU.jpg"),
     },
