@@ -3,9 +3,9 @@ const data = {
     {
       id: 1,
       date: 'September - November 2024',
-      headline: "drawings: a solo exhibition",
+      headline: "solo exhibition at NEVER downtown Portland",
       body: `
-        <p><b><i>drawings</i></b> is a solo exhibition by John Whitten at <b>NEVER Coffee Lab</b>, 537 SW 12th Ave, Portland, OR 97205</p>
+        <p><b><i>drawings</i></b> is a solo exhibition by John Whitten at NEVER Coffee Lab, 537 SW 12th Ave, Portland, OR 97205</p>
         </br>
         <p>The show will run September 15 - November 15, 2024.</p>
         </br>
@@ -15,7 +15,7 @@ const data = {
         </br>
         <p>This exhibition was generously funded in part by an Arts3C grant from the Regional Arts & Culture Council.</p>
       `,
-      image: require("./../img/drawings/never-2024.jpg"),
+      image: require("./../img/news/never-2024.jpg"),
     },
     {
       id: 2,
