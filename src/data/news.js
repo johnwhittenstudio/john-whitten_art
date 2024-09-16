@@ -15,8 +15,7 @@ const data = {
         </br>
         <p>This exhibition was generously funded in part by an Arts3C grant from the Regional Arts & Culture Council.</p>
       `,
-      image: require("./../img/drawings/clouds.jpg"),
-      imageCredit: '42.3516° N, 107.4573° W, at 30,000 ft, colored pencil on paper, 22 x 30 inches', 
+      image: require("./../img/drawings/never-2024.jpg"),
     },
     {
       id: 2,
