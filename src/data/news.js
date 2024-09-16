@@ -2,12 +2,12 @@ const data = {
   news: [
     {
       id: 1,
-      date: 'September - November 2024',
+      date: 'September - December 2024',
       headline: "solo exhibition at NEVER downtown Portland",
       body: `
         <p><b><i>drawings</i></b> is a solo exhibition by John Whitten at NEVER Coffee Lab, 537 SW 12th Ave, Portland, OR 97205</p>
         </br>
-        <p>The show will run September 15 - November 15, 2024.</p>
+        <p>The show will run September 15 - December 15, 2024.</p>
         </br>
         <p>John Whitten’s drawings focus primarily on landscapes where he has completed a physical or emotional journey. By rendering digital photographs of these places through meticulous drawing techniques, he explores the parallels between the breakdown of digital images into pixels and drawings into individual marks. Using a digital projector, John translates his photographs into hand-drawn graphite and colored pencil marks, guided by the abstraction inherent in pixelated grids and halftone processes.</p>
         </br>
