@@ -1,13 +1,43 @@
-const data = {
-  news: [
+const newsData = [
+  {
+      date: 'July - September 2025',
+      headline: "Around Oregon Biennial at The Arts Center in Corvallis",
+      body: `
+        <p>July 15 – September 6, 2025.</p>  
+        </br>
+        <p><i>46.2496° N, 122.1369° W</i> was juried into the Around Oregon Biennial by Scott Maulburn and, as a recognition of excellence, received $200 from The Arts Center The Steele Family Endowment.</p>
+        </br>
+        <p>Every 2 years, The Arts Center celebrates work created around Oregon with a juried exhibition in the Main Gallery. This exhibition includes work from both established and emerging artists, and embraces diverse perspectives from artists living across our expansive state.</p>
+        </br>
+        <p>Click the following link to read Scott Maulburn's juror statement: <a href="https://theartscenter.net/around-oregon-biennial/#:~:text=Statement%20from%20the%20Juror" target="_blank" rel="noopener noreferrer">Juror Statement</a></p>
+      `,
+      image: require("./../img/news/aob.jpg"),
+    },  
     {
-      id: 1,
+      date: 'July 2025',
+      headline: "Well Well Well... a member group exhibition",
+      body: `
+        <p>July 5 - 26, 2025.</p>  
+        </br>
+        <p><b><i>Well Well Well…</i></b> Look who’s showing together.</p>
+        </br>
+        <p>This summer, Well Well Projects presents our member exhibition: a gathering of artists who, despite working across different mediums, themes, and sensibilities, share a bond of being in this thing together. It’s not a manifesto, a movement, or even a neat conversation. It’s a group show.</p>
+        </br>
+        <p>But not just any group show. This one is a bit like opening the group chat in physical form: everyone brings something different, there are pleasant surprises, and somehow it all comes together. </p>
+        </br>
+        <p>The title, <i>Well Well Well…</i>, is part greeting, part side-eye, part existential pause. It’s what you say when you’re surprised, curious, maybe a little impressed. </p>
+        </br>
+        <p>This exhibition marks another chapter in the ongoing project of being artists in public, together, and on our own terms. </p>
+      `,
+      image: require("./../img/news/well-well-well.jpg"),
+    },
+    {
       date: 'September - December 2024',
       headline: "solo exhibition at NEVER downtown Portland",
       body: `
         <p><b><i>drawings</i></b> is a solo exhibition by John Whitten at NEVER Coffee Lab, 537 SW 12th Ave, Portland, OR 97205</p>
         </br>
-        <p>The show will run September 15 - December 15, 2024.</p>
+        <p>The show ran September 15 - December 15, 2024.</p>
         </br>
         <p>John Whitten’s drawings focus primarily on landscapes where he has completed a physical or emotional journey. By rendering digital photographs of these places through meticulous drawing techniques, he explores the parallels between the breakdown of digital images into pixels and drawings into individual marks. Using a digital projector, John translates his photographs into hand-drawn graphite and colored pencil marks, guided by the abstraction inherent in pixelated grids and halftone processes.</p>
         </br>
@@ -18,7 +48,6 @@ const data = {
       image: require("./../img/news/never-2024.jpg"),
     },
     {
-      id: 2,
       date: 'September - October 2024',
       headline: "OSU Art + Design Staff and Faculty Exhibition",
       body: `
@@ -27,7 +56,6 @@ const data = {
       image: require("./../img/news/2024-OSU.jpg"),
     },
     {
-      id: 3,
       date: 'December 2023',
       headline: "Companions: Well Well Projects Exchange",
       body: `
@@ -42,7 +70,6 @@ const data = {
       image: require("./../img/news/vestibule.jpg"),
     },
     {
-      id: 4,
       date: 'November 2022 - January 2023',
       headline: "The Nexus of Here",
       body: `
@@ -71,7 +98,6 @@ const data = {
       image: require("./../img/news/nexus-of-here.jpg"),
     },
     {
-      id: 5,
       date: 'November 2022',
       headline: "Through Line, Oregon State University Art Department Faculty exhibition",
       body: `
@@ -87,7 +113,6 @@ const data = {
       imageCredit: 'Waves in full color No. 1 & No. 2, colored pencil on paper, on view in Through Line at Oregon State University’s Fairbanks Gallery', 
     },
     {
-      id: 6,
       date: 'October 2022',
       headline: "Along these lines, with Julia Bradshaw, Ron Linn, & John Whitten",
       body: `
@@ -105,7 +130,6 @@ const data = {
       imageCredit: 'Along these lines, installation view at Well Well Projects in Portland, Oregon, image credit: Mario Gallucci', 
     },
     {
-    id: 7,
     date: 'April 2022',
     headline: "To dog a portal",
     body: `
@@ -122,7 +146,6 @@ const data = {
     imageCredit: 'To dog a portal, installation view at Well Well Projects in Portland, Oregon, image credit: Mario Gallucci', 
   },
   {
-    id: 8,
     date: 'February 2022',
     headline: "A Provocation",
     body: `
@@ -153,7 +176,6 @@ const data = {
     imageCredit: 'Little Pigeon, collaboration with Katherine Spinella, on view in A Provocation at After/Time Collective in Portland, Oregon', 
   },
   {
-    id: 9,
     date: 'December 2021',
     headline: "Atlas",
     body: `
@@ -173,7 +195,6 @@ const data = {
     image: require("./../img/news/atlas.png"),
   },
   {
-    id: 10,
     date: 'September 2021',
     headline: "Thunderstruck 2.0: black hole sun gets reviewed by Lindsay Costello for OregonArtsWatch",
     body: `
@@ -183,7 +204,6 @@ const data = {
     imageCredit: 'Thunderstruck 2.0: black hole sun exhibited in Portland, OR in September 2021.', 
   },
   {
-    id: 11,
     date: 'September 2021',
     headline: "Thunderstruck 2.0: black hole sun",
     body: `
@@ -211,7 +231,6 @@ const data = {
     imageCredit: 'Thunderstruck 2.0: black hole sun image credit by John Whitten', 
   },
   {
-    id: 12,
     date: 'August 2020',
     headline: "Cultivating Artist Communities and Networks",
     body: `
@@ -221,8 +240,14 @@ const data = {
       </p>
     `,
     image: require("./../img/news/uo-artist-comm.jpg"),
-  },
-  ],
+  }
+  ]
+
+const data = {
+  news: newsData.map((item, index) => ({
+    ...item,
+    id: index + 1,
+  })),
 };
 
 export default data;
