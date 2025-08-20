@@ -9,7 +9,7 @@ const newsData = [
         </br>
         <p>Every 2 years, The Arts Center celebrates work created around Oregon with a juried exhibition in the Main Gallery. This exhibition includes work from both established and emerging artists, and embraces diverse perspectives from artists living across our expansive state.</p>
         </br>
-        <p>Click the following link to read Scott Maulburn's juror statement: <a href="https://theartscenter.net/around-oregon-biennial/#:~:text=Statement%20from%20the%20Juror" target="_blank" rel="noopener noreferrer">Juror Statement</a></p>
+        <p>Click the following link to read Scott Maulburn's juror statement: <a href="https://theartscenter.net/around-oregon-biennial/#:~:text=Statement%20from%20the%20Juror" target="_blank" rel="noopener noreferrer">[ link to Juror Statement ]</a></p>
       `,
       image: require("./../img/news/aob.jpg"),
     },  
