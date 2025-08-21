@@ -31,6 +31,18 @@ const newsData = [
       `,
       image: require("./../img/news/well-well-well.jpg"),
     },
+        {
+      date: 'September 2024 - July 2025',
+      headline: "Art in the President’s Oﬃce + 6th Floor of Kerr at Oregon State University",
+      body: `
+        <p>Curated by Anna Fidler.</p>  
+        </br>
+        <p>The Art in the President’s Oﬃce Program places emphasis on work made by OSU associated artists including current and emeritus faculty, alumni and students. This year, Michael Boonstra, OSU Senior Instructor II of Art, will exhibit work from his three series: <i>range</i> and <i>nowhere/nowhere</i>, and John Whitten, OSU Senior Instructor I, will present work from his series, <i>Stochastic Resonance</i>.</p>
+        </br>
+        <p>Fidler selected artwork for the 6th floor of Kerr that pairs experiments with color and the geography of the Pacific Northwest. Michael Boonstra’s numerous visits to Playa Summer Lake, Cape Perpetua (during the OSU Creative Coast classes), and Oregon’s forests inform his creative vision. Boonstra is interested in how science and aesthetics merge through the lens of an artist. A researcher, Boonstra investigates the land through a variety of mediums including drawings, photographs and site-specific installations. John Whitten’s meticulous experiments with color are both meditative and personal. Whitten’s almost-machine like attention to hand-drawn line and the optical mixing of color via finely sharpened pencils emphasizes process as well as the humanity of living in our digital age.</p>
+      `,
+      image: require("./../img/news/pres-res.jpg"),
+    },
     {
       date: 'September - December 2024',
       headline: "solo exhibition at NEVER downtown Portland",
