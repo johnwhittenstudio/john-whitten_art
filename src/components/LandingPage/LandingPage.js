@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import classes from './LandingPage.module.css';
-import logo from './../img/logos/jw-logo_lp.png';
+import logo from './../img/logos/jw-logo_lpds.png';
 
 const LandingPage = () => {
   return (

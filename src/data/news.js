@@ -1,5 +1,26 @@
 const newsData = [
   {
+      date: 'October 2025',
+      headline: "₍^. .^₎⟆ & /|\\ ^._.^ /|\\ at Well Well Projects in Portland, OR",
+      body: `
+        <p>October 4 – 26, 2025.</p>  
+        </br>
+        <p><i>Anna Fidler, Michael E. Stephen, John Whitten.</p>
+        </br>
+        <p>For as long as humans have gazed into the dark, there have been cats and bats staring back. From divine guardians to ominous omens, these otherworldly creatures have captivated the human imagination for centuries.</p>
+        </br>
+        <p>The cat: collaborator of witches, its flashing, changeable eyes glinting with nocturnal mischief.</p>
+        </br>
+        <p>The bat: a messenger of the underworld, a velvet-winged omen overhead.</p>
+        </br>
+        <p>₍^. .^₎⟆ & /|\\ ^._.^ /|\\  is an exhibition of new works by Anna Fidler, Michael E. Stephen, and John Whitten that summon the humor, tenderness, and strangeness of these animals. Part séance, part pet portrait, part garage-sale coven, this exhibition conjures a shared love of magic(k) and mystery through drawing, painting, installation and assemblage.
+        </p>
+        </br>
+        <p><a href="https://www.wellwellprojects.com/cats-and-bats" target="_blank" rel="noopener noreferrer">www.wellwellprojects.com/cats-and-bats</a></p>
+      `,
+      image: require("./../img/news/cats-and-bats.png"),
+    },  
+  {
       date: 'July - September 2025',
       headline: "Around Oregon Biennial at The Arts Center in Corvallis",
       body: `
