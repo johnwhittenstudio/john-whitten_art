@@ -22,8 +22,8 @@ const Home = () => {
           </Link>
         </div>
         <div className={classes.HomeItem}>
-          <Link to="/digital">
-            <img className={classes.HomeImage} src={image03} alt="digital gallery" />
+          <Link to="/photography">
+            <img className={classes.HomeImage} src={image03} alt="photography gallery" />
             <div className={classes.HomeItemOverlay}>
               <p className={classes.ImageText}>photography</p>
             </div>

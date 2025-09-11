@@ -1,0 +1,232 @@
+/* Reset and Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.PhotographysIndexContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Layout for Photography Info and Image */
+.PhotographyAndTextContainer {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 0;
+  height: 85vh;
+}
+
+.PhotographysIndex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 25%;
+}
+
+.PhotographyInfo {
+  margin-bottom: 15px;
+}
+
+.PhotographyInfo h4, .PhotographyInfo p {
+  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+  margin-bottom: 5px;
+  font-size: .85rem;
+  font-weight: 500;
+  color: #555555;
+}
+
+.PhotographyInfo h4 {
+  font-weight: 600;
+  font-size: .8rem;
+}
+
+/* General Image Styles */
+.Photography {
+  max-width: 100%;
+  max-height: 100vh; /* Container never exceeds the viewport height */
+  overflow: hidden; /* Ensure no content exceeds the container */
+  margin: 0 auto;
+  /* padding-right: 15%; */
+}
+
+.Photography .img-container {
+  height: 95%;
+}
+
+.Photography img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 20px 0 0 20px;
+  object-fit: contain;
+  display: block;
+}
+
+
+.PaginationContainer {
+  position: relative;
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: left;
+  position: relative;
+  cursor: pointer;
+  padding: 0 40px;
+}
+
+.pagination li {
+  display: inline-block;
+  margin-right: 5px;
+  list-style: none;
+}
+
+.pagination li a {
+  text-decoration: none;
+  color: #555555;
+  font-family: "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+.pagination li.active a {
+  color: #0022a3;
+  font-weight: 800;
+}
+
+/* Positioning for Previous and Next buttons */
+.pagination li:first-child {
+  position: absolute;
+  left: 0; /* Align to the left edge */
+}
+
+.pagination li:last-child {
+  position: absolute;
+  right: 0; /* Align to the right edge */
+  margin: 0 50px;
+}
+
+/* Hover styles */
+.pagination li:first-child a:hover, 
+.pagination li:last-child a:hover {
+  color: #0022a3;
+}
+
+
+/* Responsive Layout for Tablet and Mobile */
+@media (max-width: 1024px) {
+  .PhotographyAndTextContainer {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .PhotographysIndex {
+    width: 100%;
+    order: 2;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .Photography {
+    padding-right: 0;
+  }
+
+  .Photography img {
+    width: 100%;
+    margin: 0;
+    order: 1;
+  }
+
+  .PaginationContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100px;
+  }
+
+  .pagination li:last-child {
+    margin-right: 0px;
+  }
+
+  /* Styling Previous Label */
+  .pagination li:first-child a {
+    margin-right: 50px;
+    font-size: 1rem;
+  }
+
+  /* Styling Next Label */
+  .pagination li:last-child a {
+    margin-left: 50px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .PhotographyAndTextContainer {
+    margin: 60px 0;
+  }
+
+  .Photography img {
+    order: 1;
+  }
+
+  .PaginationContainer  {
+    font-size: 0.8rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+  
+  .PhotographysIndexContainer header {
+    margin-left: 65px;
+  }
+
+  .PhotographyAndTextContainer {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .Photography img {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .PhotographyInfo {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .PaginationContainer {
+    margin-top: 30px;
+  }
+
+  /* Styling Previous Label */
+  .pagination li:first-child a {
+    margin-right: 50px;
+    font-size: 1rem;
+  }
+
+  /* Styling Next Label */
+  .pagination li:last-child a {
+    margin-left: 50px;
+    font-size: 1rem;
+  }
+}
