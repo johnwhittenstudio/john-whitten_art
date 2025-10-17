@@ -21,6 +21,26 @@ const newsData = [
       image: require("./../img/news/cats-and-bats.png"),
     },  
   {
+      date: 'September - November 2025',
+      headline: "Mooning Nancy installed at Patricia Valian Reeser Center for the Creative Arts in Corvallis, OR",
+      body: `
+        <p>September 26 – November 8, 2025.</p>  
+        </br>
+        <p>PRAx Toomey Lobby.</p>
+        </br>
+        <p><i>Mooning Nancy</i> is a series of digital photomicroscopic images of spellcasting salt, photographed by John Whitten. The salt was ritually collected at the Bonneville Salt Flats and prepared under the winter solstice full moon at Nancy Holt’s Sun Tunnels in Western Utah by John Whitten, Katherine Spinella, Michael Stephen, and Jessi DiTillio, four artists who collaborate as the Thunderstruck Collective. .</p>
+        </br>
+        <p>Salt has long been a medium of ritual by absorbing, preserving, protecting, and transforming. In this work, spellcasting salt serves as both material and metaphor, linking land art, communal ritual, and cosmic time. Drawing on the historical use of salt in mystical and protective practices, the Thunderstruck artists frame it as a conceptual vessel, charged through collaborative performance and celestial alignment. Whitten’s photomicroscopy images offer a personal visual interpretation of this shared material, revealing its microcosmic landscapes and symbolic potential.</p>
+        </br>
+        <p> As one of the few prominent women land artists of the 1970s, Nancy Holt’s work offers a unique lens for revisiting the history of the art historical movement. The Thunderstruck Collective intentionally timed visits to the Sun Tunnels with the solstices, experiencing the artwork as Holt designed it to align with celestial time. Through creative rituals and material experiments, the Thunderstruck artists build on Holt’s ethos by exploring solar, cosmic, spiritual, social, and political energies tied to human intervention in the landscape.</p>
+        </br>
+        <p><i>Special thanks to Dr. Christopher J. Marshall, Curator and Collections Manager of the Arthropod Collection at Oregon State University, for granting access to photomicroscopy equipment.</i></p>
+        </br>
+        <p><a href="https://prax.oregonstate.edu/visual-arts/current/mooning-nancy" target="_blank" rel="noopener noreferrer">prax.oregonstate.edu/visual-arts/current/mooning-nancy</a></p>
+      `,
+      image: require("./../img/news/prax.jpg"),
+    },  
+  {
       date: 'July - September 2025',
       headline: "Around Oregon Biennial at The Arts Center in Corvallis",
       body: `
