@@ -18,7 +18,7 @@ const newsData = [
         </br>
         <p><a href="https://www.wellwellprojects.com/cats-and-bats" target="_blank" rel="noopener noreferrer">www.wellwellprojects.com/cats-and-bats</a></p>
       `,
-      image: require("./../img/news/cats-and-bats.png"),
+      image: require("./../img/news/cats-bats.jpg"),
     },  
   {
       date: 'September - November 2025',
