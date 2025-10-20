@@ -1,11 +1,25 @@
 const newsData = [
   {
       date: 'October 2025',
+      headline: "₍^. .^₎⟆ & /|\\ ^._.^ /|\\ reviewed for Willamette Week",
+      body: `
+        <p>October 18, 2025.</p>  
+        </br>
+        <p>Art aficionados hoping to lighten up this particularly unhinged spooky season, find reprieve at Well Well Projects, Oregon Contemporary’s members gallery, for its cute and mysterious group exhibition ₍^. .^₎⟆ & /|\\ ^._.^ /|\\ (pronounced “Cats and Bats”), on view through Oct. 26. Though the animals’ social symbolism will be on full display, plenty of the works are easily digestible works of art all about the animal kingdom’s mascots of Halloween.</p>
+        </br>
+        <p>click the link below to read Brianna Wheeler’s full review of ₍^. .^₎⟆ & /|\\ ^._.^ /|\\</p>
+        </br>
+        <p><a href="https://www.wweek.com/arts/visual-arts/2025/10/18/celebrate-the-animal-kingdoms-halloween-mascots-with-group-art-show-/" target="_blank" rel="noopener noreferrer">www.wweek.com/arts/visual-arts/2025/10/18/celebrate-the-animal-kingdoms-halloween-mascots-with-group-art-show-/</a></p>
+      `,
+      image: require("./../img/news/cats-bats-press.png"),
+    }, 
+  {
+      date: 'October 2025',
       headline: "₍^. .^₎⟆ & /|\\ ^._.^ /|\\ at Well Well Projects in Portland, OR",
       body: `
         <p>October 4 – 26, 2025.</p>  
         </br>
-        <p><i>Anna Fidler, Michael E. Stephen, John Whitten.</p>
+        <p><i>Anna Fidler, Michael E. Stephen, John Whitten.</i></p>
         </br>
         <p>For as long as humans have gazed into the dark, there have been cats and bats staring back. From divine guardians to ominous omens, these otherworldly creatures have captivated the human imagination for centuries.</p>
         </br>
