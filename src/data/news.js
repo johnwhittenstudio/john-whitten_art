@@ -35,10 +35,10 @@ const newsData = [
       image: require("./../img/news/cats-bats.jpg"),
     },  
   {
-      date: 'September - November 2025',
+      date: 'September - December 2025',
       headline: "Mooning Nancy installed at Patricia Valian Reeser Center for the Creative Arts in Corvallis, OR",
       body: `
-        <p>September 26 – November 8, 2025.</p>  
+        <p>September 26 – December 15, 2025.</p>  
         </br>
         <p>PRAx Toomey Lobby.</p>
         </br>
