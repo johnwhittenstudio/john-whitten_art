@@ -1,5 +1,15 @@
 const newsData = [
   {
+      date: 'December 2025',
+      headline: "₍^. .^₎⟆ & /|\\ ^._.^ /|\\ is Willamette Week's top 3 favorite shows of 2025",
+      body: `
+        <p>December 23, 2025.</p>  
+        </br>
+        <p><a href="https://www.wweek.com/arts/visual-arts/2025/12/23/art-we-loved-in-2025/" target="_blank" rel="noopener noreferrer">www.wweek.com/arts/visual-arts/2025/12/23/art-we-loved-in-2025/</a></p>
+      `,
+      image: require("./../img/news/ww-2025.jpg"),
+    }, 
+  {
       date: 'October 2025',
       headline: "₍^. .^₎⟆ & /|\\ ^._.^ /|\\ reviewed for Willamette Week",
       body: `
