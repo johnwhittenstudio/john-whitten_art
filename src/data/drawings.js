@@ -66,7 +66,7 @@ const data = {
     },
     {
       id: 9,
-      title: '40.3573° N, 74.6672° W',
+      title: '38°20.22.9 N 87°33.29.5 W',
       description: "colored pencil on paper",
       size: "22 x 30 inches",
       year: "2024",
