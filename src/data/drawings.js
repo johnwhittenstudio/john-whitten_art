@@ -40,8 +40,16 @@ const data = {
       year: "2025",
       image: require("./../img/drawings/hiss.jpg"),
     },
-          {
+    {
       id: 6,
+      title: 'Snugs',
+      description: "colored pencil on paper",
+      size: "14 x 11 inches",
+      year: "2026",
+      image: require("./../img/drawings/snugs.jpg"),
+    },
+          {
+      id: 7,
       title: 'Strength',
       description: "colored pencil on paper",
       size: "14 x 17 inches",
@@ -49,7 +57,7 @@ const data = {
       image: require("./../img/drawings/strength.jpg"),
     },
           {
-      id: 7,
+      id: 8,
       title: 'Boop',
       description: "colored pencil on paper",
       size: "14 x 17 inches",
@@ -57,7 +65,7 @@ const data = {
       image: require("./../img/drawings/boop.jpg"),
     },
     {
-      id: 8,
+      id: 9,
       title: '42.3516° N, 107.4573° W, at 30,000 ft',
       description: "colored pencil on paper",
       size: "22 x 30 inches",
@@ -65,7 +73,7 @@ const data = {
       image: require("./../img/drawings/clouds.jpg"),
     },
     {
-      id: 9,
+      id: 10,
       title: '38°20.22.9 N 87°33.29.5 W',
       description: "colored pencil on paper",
       size: "22 x 30 inches",
@@ -73,7 +81,7 @@ const data = {
       image: require("./../img/drawings/willow.jpg"),
     },
     {
-      id: 10,
+      id: 11,
       title: '44.6498° N, 120.2667° W',
       description: "colored pencil on paper",
       size: "22 x 30 inches",
@@ -81,7 +89,7 @@ const data = {
       image: require("./../img/drawings/hills.jpg"),
     },
     {
-      id: 11,
+      id: 12,
       title: '46.2496° N, 122.1369° W',
       description: "graphite pencil on paper",
       size: "22 x 30 inches",
@@ -89,7 +97,7 @@ const data = {
       image: require("./../img/drawings/rock.jpg"),
     },
     {
-      id: 12,
+      id: 13,
       title: '46.2956° N, 122.2522° W',
       description: "graphite pencil on paper",
       size: "22 x 30 inches",
@@ -97,7 +105,7 @@ const data = {
       image: require("./../img/drawings/water.jpg"),
     },
     {
-      id: 13,
+      id: 14,
       title: '38.1123° N, 109.5311° W',
       description: "graphite pencil on paper",
       size: "22 x 30 inches",
@@ -105,7 +113,7 @@ const data = {
       image: require("./../img/drawings/dirt.jpg"),
     },
     {
-      id: 14,
+      id: 15,
       title: 'Spirit Lake Cloud',
       description: "graphite pencil on paper",
       size: "22 x 30 inches",
@@ -113,7 +121,7 @@ const data = {
       image: require("./../img/drawings/sl-cloud.jpg"),
     },
     {
-      id: 15,
+      id: 16,
       title: 'Spirit Lake Tarot',
       description: "graphite pencil on paper",
       size: "22 x 30 inches",
@@ -121,7 +129,7 @@ const data = {
       image: require("./../img/drawings/tarot.jpg"),
     },
     {
-      id: 16,
+      id: 17,
       title: 'Perseus',
       description: "graphite pencil on paper",
       size: "22 x 30 inches",
@@ -129,7 +137,7 @@ const data = {
       image: require("./../img/drawings/perseus.jpg"),
     },
     {
-      id: 17,
+      id: 18,
       title: 'Cabin Interior',
       description: "graphite pencil on paper",
       size: "22 x 30 inches",
@@ -137,7 +145,7 @@ const data = {
       image: require("./../img/drawings/cabin-interior.jpg"),
     },
     {
-      id: 18,
+      id: 19,
       title: 'Google Map',
       description: "graphite pencil on paper",
       size: "22 x 30 inches",
@@ -145,7 +153,7 @@ const data = {
       image: require("./../img/drawings/google-map.jpg"),
     },
     {
-      id: 19,
+      id: 20,
       title: 'Supernova',
       description: "graphite pencil on paper",
       size: "22 x 30 inches",
@@ -153,7 +161,7 @@ const data = {
       image: require("./../img/drawings/supernova.jpg"),
     },
     {
-      id: 20,
+      id: 21,
       title: 'Lunar Eclipse',
       description: "colored pencil pencil on paper",
       size: "12 x 18 inches",
