@@ -1,5 +1,15 @@
 const newsData = [
   {
+      date: 'February 2026',
+      headline: "John Whitten receives 2026 Individual Artist Fellowship from Oregon Arts Commission",
+      body: `
+        <p>February 12, 2026.</p>  
+        </br>
+        <p><a href="https://www.oregon.gov/biz/aboutus/artscommission/news/PublishingImages/Lists/News%20Releases/AllItems/2026%20Individual%20Fellowships.pdf?utm_medium=email&utm_source=govdelivery" target="_blank" rel="noopener noreferrer">2026 Individual Artist Fellowships Announced Press Release</a></p>
+      `,
+      image: require("./../img/news/oac-iaf26.png"),
+    }, 
+  {
       date: 'December 2025',
       headline: "₍^. .^₎⟆ & /|\\ ^._.^ /|\\ is Willamette Week's top 3 favorite shows of 2025",
       body: `
