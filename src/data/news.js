@@ -1,5 +1,23 @@
 const newsData = [
   {
+      date: 'July 2026',
+      headline: "Might As Well Well group exhibition at Well Well Projects",
+      body: `
+        <p>July 4 - 25 2026.</p>  
+        </br>
+        <p><i>Snugs</i>, 2026, colored pencil on paper, (left), exhibited alongside work from members of Well Well Projects in their summer group exhibition.</p>
+        </br>
+        <p><i>Might As Well Well</i> brings together the artists of Well Well Projects for a collective exhibition that celebrates the people who make this space possible. The title is equal parts shrug, rallying cry, and statement of intent. If we're going to do this, we might as well do it well.</p>
+        </br>
+        <p>The work on view spans a wide range of mediums, ideas, and approaches. There is no single theme holding it all together beyond a cohort of artists who chose to share space, support one another, and contribute to the community of an artist-run gallery.</p>
+        </br>
+        <p>An ongoing experiment, Well Well Projects continues to grow its community in its sixth year of arts programming. As we welcome new members and begin a new chapter, Might As Well Well offers a snapshot of the collective as it exists right now: showing up curious and ambitious to embrace this chaotic adventure.</p>
+        </br>
+        <p><a href="https://www.wellwellprojects.com/might-as-well-well" target="_blank" rel="noopener noreferrer">www.wellwellprojects.com/might-as-well-well</a></p>
+      `,
+      image: require("./../img/news/might-as-well-well.jpg"),
+    }, 
+  {
       date: 'February 2026',
       headline: "John Whitten receives 2026 Individual Artist Fellowship from Oregon Arts Commission",
       body: `
