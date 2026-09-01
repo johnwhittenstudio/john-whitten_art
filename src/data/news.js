@@ -1,7 +1,7 @@
 const newsData = [
   {
       date: 'July 2026',
-      headline: "Might As Well Well group exhibition at Well Well Projects",
+      headline: "Might As Well Well Member Group Exhibition at Well Well Projects",
       body: `
         <p>July 4 - 25 2026.</p>  
         </br>
