@@ -5,7 +5,7 @@ const newsData = [
       body: `
         <p>July 4 - 25 2026.</p>  
         </br>
-        <p><i>Snugs</i>, 2026, colored pencil on paper, (left), exhibited alongside work from members of Well Well Projects in their summer group exhibition.</p>
+        <p><i>Snugs</i>, 2026, colored pencil on paper, (left), exhibited in Well Well Projects' member group exhibition.</p>
         </br>
         <p><i>Might As Well Well</i> brings together the artists of Well Well Projects for a collective exhibition that celebrates the people who make this space possible. The title is equal parts shrug, rallying cry, and statement of intent. If we're going to do this, we might as well do it well.</p>
         </br>
